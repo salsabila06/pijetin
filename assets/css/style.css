@@ -429,3 +429,14 @@ input {
   width: 25px;
   height: 0px;
 }
+
+/* review section */
+
+#card-review {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  background: #dbfff6;
+  border: 1px solid #d0d0d0;
+  border-radius: 15px;
+}
