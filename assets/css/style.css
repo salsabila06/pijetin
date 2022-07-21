@@ -453,6 +453,14 @@ input {
   width: 70px;
   height: 70px;
 }
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
 /* more massage info section */
 
 .card {
