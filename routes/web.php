@@ -8,6 +8,8 @@ use App\Http\Controllers\Reset_PasswordController;
 use App\Http\Controllers\DashboardController;
 use \App\Http\Controllers\LayoutController;
 use \App\Http\Controllers\Forgot_PasswordController;
+use \App\Http\Controllers\BookingController;
+use \App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,21 +44,25 @@ Route::post('/Register',[RegisterController::class,'store'])->name('register-dat
 
 Route::get('/Login',[LoginController::class,'index'])->name('login')->middleware('guest');
 Route::post('/Login',[LoginController::class,'authenticate']);
-Route::post('/Logout',[LoginController::class,'logout'])->name('logout');
+Route::post('/Logout',[LoginController::class,'logout'])->name('logout')->middleware('auth');
+Route::get('/Logout',[LoginController::class,'logout'])->name('logout')->middleware('auth');
 
-Route::get('/Forgot_Password',[Forgot_PasswordController::class,'index'])->name('forgot');
+Route::get('/Forgot_Password',[Forgot_PasswordController::class,'index'])->name('forgot')->middleware('guest');
 Route::post('/Forgot_Password',[Forgot_PasswordController::class,'authenticate']);
 
-Route::get('/Reset_Password', [Reset_PasswordController::class,'index'])->name('reset');
+Route::get('/Reset_Password', [Reset_PasswordController::class,'index'])->name('reset')->middleware('guest');
 
 Route::get('/Dashboard',[DashboardController::class,'index'])->name('dashboard')->middleware('auth');
 
-Route::get('/Layout',[LayoutController::class,'index'])->name('Finance');
+
+Route::get('/Layout',[LayoutController::class,'index'])->name('admin')->middleware('auth');
+
+Route::get('/Booking',[BookingController::class,'index'])->name('booking');
+
+Route::get('/Profile',[LoginController::class,'show'])->name('profile')->middleware('auth');
+
+Route::get('/Posts',[PostController::class,'index'])->name('posts');
+
+Route::get('/Posts/{post}',[PostController::class,'show']);
 
 
-
-
-/*
-
-
-*/

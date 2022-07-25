@@ -22,8 +22,9 @@
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-light" type="submit"><i class="fa fa-search"></i></button>
-            <button class="btn btn-lg" type="submit"><i class="fa fa-bell-o"></i></button>
-            <button class="btn btn-lg" type="submit"><i class="fa fa-user"></i></button>
+            <a class="btn btn-lg" type="submit"><i class="fa fa-bell-o"></i></a>
+            <a class="btn btn-lg" href="{{route('profile')}}"><i class="fa fa-user" ></i></a>
+            <a class="btn btn-lg" href="{{route('logout')}}"><i class="bi bi-box-arrow-right" ></i></a>
         </form>
     </div>
 </nav>

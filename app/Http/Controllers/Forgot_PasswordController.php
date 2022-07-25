@@ -22,10 +22,10 @@ class Forgot_PasswordController extends Controller
 
         if (Auth::attempt($credentials)){
             $request->session()->regenerate();
-            return redirect()->intended('/');
+            return redirect()->intended('/Reset');
         }
 
-        return back()->with('loginError','Emails doesn exists!');
+        return back()->with('loginError','Emails doesnt  exists!');
 
     }
     //
