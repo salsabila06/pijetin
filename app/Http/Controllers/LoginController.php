@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\data;
 
 class LoginController extends Controller
 {
@@ -28,6 +29,11 @@ class LoginController extends Controller
 
         return back()->with('loginError','Login failed!');
 
+    }
+
+    public function show()
+    {
+        return view('Profile.Index',['datas'=>data::where('id',auth()->user()->id)->get()]);
     }
 
     public function logout()
