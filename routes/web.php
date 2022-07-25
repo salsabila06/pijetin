@@ -8,6 +8,8 @@ use App\Http\Controllers\Reset_PasswordController;
 use App\Http\Controllers\DashboardController;
 use \App\Http\Controllers\LayoutController;
 use \App\Http\Controllers\Forgot_PasswordController;
+use \App\Http\Controllers\BookingController;
+use \App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,19 +46,17 @@ Route::get('/Login',[LoginController::class,'index'])->name('login')->middleware
 Route::post('/Login',[LoginController::class,'authenticate']);
 Route::post('/Logout',[LoginController::class,'logout'])->name('logout');
 
-Route::get('/Forgot_Password',[Forgot_PasswordController::class,'index'])->name('forgot');
+Route::get('/Forgot_Password',[Forgot_PasswordController::class,'index'])->name('forgot')->middleware('guest');
 Route::post('/Forgot_Password',[Forgot_PasswordController::class,'authenticate']);
 
-Route::get('/Reset_Password', [Reset_PasswordController::class,'index'])->name('reset');
+Route::get('/Reset_Password', [Reset_PasswordController::class,'index'])->name('reset')->middleware('guest');
 
 Route::get('/Dashboard',[DashboardController::class,'index'])->name('dashboard')->middleware('auth');
 
-Route::get('/Layout',[LayoutController::class,'index'])->name('Finance');
 
+Route::get('/Layout',[LayoutController::class,'index'])->name('layout')->middleware('auth');
 
+Route::get('/Booking',[BookingController::class,'index'])->name('booking');
 
+Route::get('/Profile',[LoginController::class,'show'])->name('profile')->middleware('auth');
 
-/*
-
-
-*/

@@ -43,8 +43,8 @@
 </nav>
 <div class="d-flex flex-column vh-100 flex-shrink-0 p-3 text-dark" style="background-color: #DBFFF6; width: 250px;"> <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"> <svg class="bi me-2" width="40" height="32"> </svg>
         <ul class="nav nav-pills flex-column mb-auto">
-            <li><a href="dashboard.html" class="nav-link text-dark"><i class="fa fa-home"><img src="/image/Home.svg" alt=""></i><strong><span class="ms-2">Dashboard</span></strong></a> </li>
-            <li><a href="review.html" class="nav-link text-dark"> <i class="fa fa-review"><img src="/image/review.svg" alt=""></i><strong><span class="ms-2">Review</span></strong></a></li>
+            <li><a href="{{route('dashboard')}}" class="nav-link text-dark" {{Request::is('Dashboard') ? 'active':''}}><i class="fa fa-home"><img src="/image/Home.svg" alt=""></i><strong><span class="ms-2">Dashboard</span></strong></a> </li>
+            <li><a href=# class="nav-link text-dark" {{Request::is('Dashboard') ? 'active':''}}> <i class="fa fa-review"><img src="/image/review.svg" alt=""></i><strong><span class="ms-2">Review</span></strong></a></li>
             <li> <a href="pemesanan.html" class="nav-link text-dark"> <i class="fa fa-pemesanan"><img src="/image/pemesanan.svg" alt=""></i><strong><span class="ms-2">Pemesanan</span></strong></a> </li>
             <li> <a href="inbox.html" class="nav-link text-dark"> <i class="fa fa-inbox"><img src="/image/Chat.svg" alt=""></i><strong><span class="ms-2">In box</span></strong></a> </li>
             <li> <a href="pengguna.html" class="nav-link text-dark"> <i class="fa fa-pengguna"><img src="/image/pengguna.svg" alt=""></i><strong><span class="ms-2">Pengguna</span></strong></a> </li>
