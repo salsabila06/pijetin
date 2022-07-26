@@ -1,56 +1,21 @@
-input {
-  display: flex;
-  background: #7ec8bb;
-  font-family: 'Poppins';
-  font-style: normal;
-  color: #ffffff;
+body{
+    font-family: 'Poppins';
+    font-style: normal;
 }
-
-.title {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 45px;
-  letter-spacing: 0.05em;
-  color: #000000;
+.search{
+    background-color: #7EC8BB;
+    font-family: 'Poppins';
+    font-style: normal;
+    color:#FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 10px;
 }
-
-.nav-item {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  color: #000000;
-}
-
-.col-style {
-  box-sizing: border-box;
-  border-top: 1px solid #000000;
-  margin: 10px 0;
-}
-
-.tr .col-style {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.05em;
-  color: #000000;
-}
-.isi-style {
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  color: #000000;
-}
-.a {
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  color: #428b35;
+.riwayat-btn{
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #696969;
+    background: #4BECD4;
+    border-radius: 20px;
 }
