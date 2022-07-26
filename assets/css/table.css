@@ -1,4 +1,8 @@
-input{
+body{
+    font-family: 'Poppins';
+    font-style: normal;
+}
+.search{
     background-color: #7EC8BB;
     font-family: 'Poppins';
     font-style: normal;

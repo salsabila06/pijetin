@@ -16,6 +16,7 @@
 
     <!-- responsive style -->
     <link rel="stylesheet" href="{{asset('/css/responsive.css')}}" />
+
 </head>
 <body>
 <!-- Navbar -->
@@ -27,21 +28,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav align-items-center ms-auto">
-                <a class="nav-link active me-3" aria-current="page" href="/">Beranda <br /><img src="/image/Line 1.svg" alt="" /></a>
-                <a class="nav-link" href="/komuinitas">Komunitas</a>
-                <a class="nav-link" href="/tentang-kami">Tentang Kami</a>
-                <a class="nav-link" href="/dukungan">Dukungan</a>
+                <li class="nav-item"><a class="nav-link active me-3" aria-current="page" {{Request::is('hero') ? 'active'  : ""}} href="#hero"><span>Beranda</span> <br /><img src="/image/Line 1.svg" alt="" /></a></li>
+                <li class="nav-item"><a class="nav-link" {{Request::is('komunitas') ? 'active'  : ""}} href="{{route('posts')}}"><span>Komunitas</span></a></li>
+                <li class="nav-item"><a class="nav-link" {{Request::is('Tentang') ? 'active'  : ""}} href="#Tentang"><span>Tentang Kami</span></a></li>
+                <li class="nav-item"><a class="nav-link" {{Request::is('dukungan') ? 'active'  : ""}} href="#dukungan"><span>Dukungan</span></a></li>
                 <!-- <a class="btn-login ms-2" href="/"><img src="/assets/img/login.svg" alt="" /></a> -->
                 <!-- <a class="btn-signin ms-2" href="/"><img src="/assets/img/sign in.svg" alt="" /></a> -->
             </div>
-            <ul>
             @auth()
-                <li class="nav-item dropdown">
+                <div>
+                <li class="nav-item dropdown"  style="list-style: none;">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
                         Welcome Back, {{auth()->user()->first_name }}
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{{route('dashboard')}}">My Dashboard</a></li>
+                        <li><a class="dropdown-item" href="{{route('profile')}}">Profile</a></li>
+                        <li><a class="dropdown-item" href="{{route('admin')}}">My Dashboard</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
                             <form action="/Logout" method="post">
@@ -56,8 +58,7 @@
                 <!-- <a class="a-primary"><img src="/assets/img/login.svg" alt="" /></a> -->
                 <a href="{{route('register-page')}}"><button class="button-secondary">Sign in</button></a>
             @endauth
-            </ul>
-
+                </div>
         </div>
     </div>
     </div>
@@ -71,7 +72,7 @@
                 <h1><span class="fw-bold">Pijat dengan aman, nyaman, dan mudah terjangkau</span></h1>
                 <p>Melayani pijat panggilan 24 jam, pijat panggilan terpercaya, aman, dan nyaman.</p>
 
-                <a href="#">
+                <a href="{{route('booking')}}">
                     <img src="/image/accsent.svg" alt="" />
                 </a>
             </div>
@@ -247,14 +248,14 @@
 
             <div class="card-dukungan me-5">
                 <h6 class="mt-5">Support</h6>
-                <p class="mb-2">Start Booking</p>
+                <a href="{{route('booking')}}"><p class="mb-2">Start Booking</p></a>
                 <p class="mb-2">Help Center</p>
                 <p class="mb-2">Server Status</p>
             </div>
 
             <div class="card-dukungan me-5">
                 <h6 class="mt-5">My Account</h6>
-                <p class="mb-2">Profile</p>
+                <a href="{{route('profile')}}"><p class="mb-2">Profile</p></a>
                 <p class="mb-2">Last Booking</p>
             </div>
         </div>
