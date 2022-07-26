@@ -1,0 +1,21 @@
+body{
+    font-family: 'Poppins';
+    font-style: normal;
+}
+.search{
+    background-color: #7EC8BB;
+    font-family: 'Poppins';
+    font-style: normal;
+    color:#FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 10px;
+}
+.riwayat-btn{
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #696969;
+    background: #4BECD4;
+    border-radius: 20px;
+}
