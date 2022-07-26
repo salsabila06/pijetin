@@ -18,11 +18,15 @@
     left: 70px;
     top: 30px;
 }
-
+ 
 .content{
     width: 100%;
     padding: 20px;
     transition: 0.7s;
+    float: right;
+}
+.content p{
+    text-align:justify;
 }
 .sidebar{
     width: 240px;
@@ -84,5 +88,10 @@ a i{
 }  
 #chk:checked ~ .content{
     width: 80%;
+} 
+@media (max-width:764px) {
+    .sidebar{
+        width: 100%;
+    }
 } 
 
