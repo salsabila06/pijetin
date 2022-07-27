@@ -72,7 +72,6 @@ a i{
      position: fixed;
      top: 24px;
      left: 245px;
-     
 }
 .hide-btn{
     opacity: 0;
@@ -93,5 +92,4 @@ a i{
     .sidebar{
         width: 100%;
     }
-} 
-
+}  
