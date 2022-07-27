@@ -11,6 +11,7 @@ body {
   order: 0;
   flex-grow: 0;
   border-radius: 10px;
+  border: none;
 }
 .riwayat-btn {
   font-family: 'Poppins';
