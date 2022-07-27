@@ -20,12 +20,32 @@ body {
   border-radius: 20px;
 }
 
+
 input {
   display: flex;
   background: #7ec8bb;
   font-family: 'Poppins';
   font-style: normal;
   color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border-radius: 10px;
+}
+ul {padding:20px;font-family: 'Poppins';font: size 15px;}
+li {display:inline;margin:10px;padding:0; }
+
+ul a {padding:10px;text-decoration:none}
+
+ul#berhasil a#menu-berhasil,
+ul#pending a#menu-pending,
+ul#ditolak a#menu-ditolak{
+     color: #fcfdfd;
+     background: #7ec8bb;
+     flex: none;
+  order: 0;
+  flex-grow: 0;
+  border-radius: 10px;
 }
 
 .title {
@@ -39,8 +59,9 @@ input {
 
 .nav-item {
   font-family: 'Poppins';
+  font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.05em;
   color: #000000;

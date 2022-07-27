@@ -7,5 +7,3 @@ window.addEventListener('scroll', function () {
     navbar.classList.replace('nav-color', 'bg-transparent');
   }
 });
-
- 
