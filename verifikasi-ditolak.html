@@ -12,64 +12,106 @@
     <link rel="stylesheet" href="assets/css/table.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>pijetin</title>
-</head>
 
-<body >  
+</head>
+  <body >  
 <div class="content">
-    <h2 class="title ms-5">Pemesanan</h2>
+    <h2 class="title ms-5">Verifikasi</h2>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="berhasil">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ditolak1">
         <li class="nav-item">
-          <a class="link-dark" id="menu-berhasil" aria-current="page" href="pemesanan_berhasil.html">Berhasil</a>
+          <a class="nav-link active ms-5" id="menu-diterima" aria-current="page" href="verifikasi-diterima.html">Diterima</a>
         </li>
         <li class="nav-item">
-          <a class="link-dark"  id="menu-pending" aria-current="page" href="pemesanan_pending.html">Menunggu Pembayaran</a>
+            <a class="nav-link active ms-5" id="menu-menunggu-verifikasi" aria-current="page" href="#">Menunggu Verifikasi</a>
         </li>
         <li class="nav-item">
-          <a class="link-dark" id="menu-ditolak" aria-current="page" href="pemesanan_ditolak.html">Ditolak</a>
+            <a class="nav-link active ms-5" id="menu-ditolak" aria-current="page" href="verifikasi-ditolak.html">Ditolak</a>
         </li>
       </ul>
      
       <form class="d-flex" role="search">
-          <input type="search" placeholder="Cari"  aria-label="Search">
+          <input class="form-control-i me-2" type="search" placeholder="Cari"  aria-label="Search">
           <button class="btn btn-light" type="submit"><i class="fa fa-search"></i></button>
       </form>
     </div>
     </div>
   </nav>
   <div class="table-responsive-sm">
-    <table class="table caption-top">
+
+    <table class="table caption-top table-valign-middle">
       </div>
     </div>
       <thead>
-        <tr>
+        <tr class="col-style">
           <th scope="col">Username</th>
-          <th scope="col">Jasa Pijat</th>
+          <th scope="col">Email</th>
           <th scope="col">Status</th>
-          <th scope="col"></th>
+          <th scope="col">Aksi</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr scope="row" class="isi-style">
           <td>
             <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
             Naswa Bila Zakia</td>
-          <td>Pijat tradisonal</td>
-          <td> </td>
+          <td>atta@gmail.com</td>
           <td>
-            <button class="riwayat-btn" type="button"><a href="riwayat tranksaksi.html">Riwayat Pemesanan</a>   
+            <button class="status-btn" type="button">
+                Ditolak
+            </button>
+        <td>
+            <button class="status-btn1" type="button">
+                Detail Pembatalan
             </button>
         </td>
+            </td>
         </tr>
+
+        <tr scope="row" class="isi-style">
+            <td>
+              <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
+              Dalia Amalia</td>
+            <td>cantik@gmail.com</td>
+            <td>
+                <button class="status-btn" type="button">
+                    Ditolak
+                </button>
+              </td>
+              <td>
+                <button class="status-btn1" type="button">
+                    Detail Pembatalan
+                </button>
+            </td>
+          </tr>
+          
+          <tr scope="row" class="isi-style">
+            <td>
+              <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
+              Habib Rafi'i</td>
+            <td>habib456@gmail.com</td>
+            <td>
+                <button class="status-btn" type="button">
+                    Ditolak
+                </button>
+              </td>
+            <td>
+                <button class="status-btn1" type="button">
+                    Detail Pembatalan
+                </button>
+            </td>
+          </tr>
+
     </table>
-    </div>  
+
+   
   </div>
 </div>
 
