@@ -130,6 +130,54 @@ ul#ditolak a#menu-ditolak {
   font-size: 13px;
   color: #000000;
 }
+
+/* detail pengguna */
+
+.body-pengguna {
+  background-color: #ffffff;
+  font-family: 'Poppins';
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card-container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #000000;
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.title-profil {
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.det-pengguna {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
+  padding: 15px;
+}
+
+.round {
+  width: 180px;
+  height: 150px;
+  padding: 7px;
+  justify-content: center;
+}
+
+/* review */
 .review {
   display: flex;
   flex-direction: column;
@@ -157,6 +205,14 @@ ul#ditolak a#menu-ditolak {
   box-sizing: border-box;
   border-bottom: 1px solid #000000;
   margin: 10px 0;
+}
+
+.review-sty {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
 }
 
 .fa {
