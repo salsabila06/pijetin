@@ -135,11 +135,10 @@ ul#ditolak a#menu-ditolak {
 
 .body-pengguna {
   background-color: #ffffff;
-  font-family: 'Poppins';
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
   box-sizing: border-box;
 }
@@ -149,7 +148,7 @@ ul#ditolak a#menu-ditolak {
   border-radius: 5px;
   box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
   color: #000000;
-  padding-top: 30px;
+  padding-top: 10px;
   position: relative;
   width: 350px;
   max-width: 100%;
@@ -157,13 +156,16 @@ ul#ditolak a#menu-ditolak {
 }
 
 .title-profil {
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 25px;
   text-align: center;
   color: #000000;
+  padding: 0;
 }
 
 .det-pengguna {
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 18px;
   text-align: justify;
