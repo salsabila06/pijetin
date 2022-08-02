@@ -378,14 +378,14 @@ ul a {
   text-decoration: none;
 }
 ul#diterima a#menu-diterima,
-ul#pending a#menu-menunggu-verifikasi,
-ul#ditolak1 a#menu-ditolak {
-  color: #fcfdfd;
-  background: #7ec8bb;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  border-radius: 10px;
+ul#menunggu a#menu-menunggu-verifikasi,
+ul#ditolak1 a#menu-ditolak{
+    color: #fcfdfd;
+    background: #7ec8bb;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 10px;
 }
 .card-text-bg-dark {
   position: fixed;
