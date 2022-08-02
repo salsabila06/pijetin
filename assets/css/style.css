@@ -291,101 +291,155 @@ body {
   color: #000000;
 }
 
-/* Dekstop 15 */
+/* form booking */
 
-.form-tagline {
+.form {
   font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 55px;
-  line-height: 66px;
-  letter-spacing: 0.05em;
-  color: #000000;
-  background: #e5e5e5;
+  background-color: #dbfff6;
 }
-
-input {
-  background: #eeeeee;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  margin-bottom: 1rem;
+.form-title {
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 38px;
-  /* identical to box height */
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.card-form {
+  padding: 50px;
+  justify-content: center;
+}
+
+.inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 35px;
   color: #8b8b8b;
+  font-family: 'Poppins';
+}
+.inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.inputbox:last-child {
+  margin-bottom: 0;
+  font-family: 'Poppins';
+}
+.inputbox label {
+  text-transform: uppercase;
+  top: 14px;
+  left: 20px;
+  font-size: 13px;
+  transition: 0.6s;
+  font-family: 'Poppins';
+  margin-left: 10px;
+}
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+  font-family: 'Poppins';
+}
+/* .inputbox [type='button'] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
 }
 
-#waktubooking {
-  width: 630px;
-  height: 68px;
-  left: 80px;
-  top: 326px;
-}
-
-#durasiwaktu {
-  width: 630px;
-  height: 68px;
-  left: 80px;
-  top: 421px;
-}
-
-#alamat {
-  width: 630px;
-  height: 68px;
-  left: 80px;
-  top: 516px;
-}
-/* .button-lg-primary {
-  border: none;
-  background-color: transparent;
-  width: 72px;
-  height: 90px;
-  left: 80px;
-  top: 612px;
+.inputbox-c [type='button'] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
 } */
 
-#search-lk {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 33px 10px;
-  width: 197px;
-  height: 196px;
-  left: 80px;
-  top: 612px;
-  background: #f1f9ff;
-  border-radius: 10px;
-  border: none;
+/* .inputbox:hover [type='button'] {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+} */
+.but-atas {
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
 }
 
-#search-pr {
+.but-atas [type='button'] {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 36px;
+  color: #a8a8a8;
+}
+
+.but-bawah {
+  margin-bottom: 23px;
+  justify-content: space-between;
+}
+.laki {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px 10px;
+  gap: 30px;
+  border: none;
+  background: #f1f9ff;
+  border-radius: 10px;
+}
+
+.pr {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 30px 33px 10px;
-  width: 196px;
-  height: 199px;
-  left: 297px;
-  top: 611px;
+  gap: 30px;
+  border: none;
   background: #f7dfff;
+  border-radius: 10px;
+}
+
+.bookingacc {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px 10px;
+  gap: 10px;
+  background: #4cf0c9;
   border-radius: 10px;
   border: none;
 }
 
-#letter {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.05em;
-  color: #a8a8a8;
+.cancel-c {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px 10px;
+  gap: 10px;
+  border: 1px solid #f41d1d;
+  border-radius: 10px;
 }
 
+.formpoto {
+  width: 430px;
+  height: 625px;
+  border-radius: 7%;
+  margin: 50px;
+}
 /* Landing page pengguna */
 
 /* hero section */
