@@ -178,6 +178,17 @@ ul#ditolak a#menu-ditolak {
   padding: 7px;
   justify-content: center;
 }
+.card-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding: 50px 0;
+}
 
 /* review */
 .review {
@@ -304,7 +315,6 @@ ul#ditolak a#menu-ditolak {
 .poto {
   width: 162px;
   height: 79px;
-  background: url(image);
   border-radius: 5px;
 }
 
@@ -334,6 +344,21 @@ ul#ditolak a#menu-ditolak {
   font-weight: 400;
   font-size: 12px;
 }
+
+.foto-list {
+  width: 162px;
+  height: 79px;
+  border-radius: 5px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.img-order {
+  width: 29px;
+  height: 29px;
+}
+
 .status-btn {
   display: flex;
   flex-direction: row;
@@ -421,4 +446,58 @@ ul#ditolak1 a#menu-ditolak {
   line-height: 18px;
   letter-spacing: 0.05em;
   color: #000000;
+}
+
+/* alasan menolak */
+
+.body-als {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-als {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 10px;
+  gap: 10px;
+  width: 317px;
+  height: 310px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.form-check {
+  text-align: start;
+}
+.form-check-label {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  text-align: start;
+}
+
+.send {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+
+  width: 287px;
+  height: 33px;
+
+  background: #ffa6a6;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }

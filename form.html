@@ -3,70 +3,83 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pijetin</title>
-
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet" />
 
-    <!-- my style -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-
-    <!-- responsive style -->
-    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <!--my style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <title>pijetin</title>
   </head>
-
   <body>
-    <!-- navbar brand -->
-    <nav class="navbar-form bg-white w-100">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="/assets/img/logonama.svg" alt="" width="100" height="38" />
-        </a>
-      </div>
-    </nav>
+    <!-- navbar -->
 
-    <!-- content -->
+    <section class="form d-flex">
+      <div class="form-left">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-md-6">
+            <div class="namalogo">
+              <img class="logonama" src="assets/img/logonama.svg" alt="" />
+            </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 my-5" id="form-tagline">
-          <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"></div>
-          <h2 class="fw-bolder">Lengkapi data dibawah dan pilih pijatmu</h2>
-        </div>
-        <form-floating>
-          <div class="d-flex justify-content-start">
-            <input type="date" id="waktubooking" name="waktu booking" placeholder="Waktu booking" />
-          </div>
+            <div class="card-form">
+              <!-- card header -->
+              <div class="formgroup">
+                <h3 class="form-title">Lengkapi data dibawah dan pilih pijatmu</h3>
+                <!-- <input type="text"> -->
+              </div>
 
-          <div class="d-flex justify-content-start">
-            <input type="time" id="durasiwaktu" placeholder="Durasi waktu" />
-          </div>
+              <form>
+                <div class="inputbox">
+                  <input type="text" required="required" />
+                  <label>Waktu booking</label>
+                </div>
+                <div class="inputbox">
+                  <input type="text" required="required" />
+                  <label>Durasi waktu</label>
+                </div>
+                <div class="inputbox">
+                  <input type="location" required="required" />
+                  <label>Alamat</label>
+                </div>
+              </form>
 
-          <div class="d-flex justify-content-start">
-            <input type="address" id="alamat" placeholder="Alamat" />
-          </div>
-        </form-floating>
-          
-        <div class="col-md-3 my-5" id="form-tagline">
-          <div class="p-2"><img src="/assets/img/tentangkami-ponsel.svg" alt="" /></div>
-        </div>
-      </div>
+              <div class="d-flex but-atas">
+                <input type="button" value="Pria" src="assets/img/icon-lk.svg" class="laki me-2" />
+                <input type="button" value="Wanita" src="assets/img/icon-pr.svg" class="pr" />
+              </div>
 
-        <!-- button search -->
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="card-search">
-                <a href=""><img src="/assets/img/search-lk.svg" alt="" class="me-5"/></a>
-                <a href=""><img src="/assets/img/search-pr.svg" alt="" class="me-5" /></a>
+              <!-- <div class="inputbox">
+                <input type="button" value="Booking" />
+              </div>
+              <div class="inputbox-c">
+                <input type="button" value="Cancel" />
+              </div> -->
+
+              <div class="d-flex but-bawah">
+                <button class="bookingacc">Booking</button>
+                <button class="cancel-c">Cancel</button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="form-right">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/img/foto 2.svg" alt="" class="formpoto" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
   </body>
 </html>
