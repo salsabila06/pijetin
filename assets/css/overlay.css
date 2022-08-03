@@ -1,71 +1,71 @@
-
 .nav-item {
-    font-family:'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0.05em;
-    color: #000000;
-  }
-.status-btn{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 5px;
-    gap: 10px;
-    background: #33B128;
-    border-radius: 20px;
-    color: #ffffff;
-    border: solid 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
 }
-.card-text-bg-dark{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 70;
-    padding: 120px 0;
-  }
-  .card-img-overlay{
-    position: absolute;
-    width: 800px;
-    height: 700px;
-    left: 300px;
-    top: 129px;
-    margin: 0 auto;
-    background: #fcfdfd; 
-  }
-  .card-title{
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 45px;
-    letter-spacing: 0.05em;
-    color: #000000;
-  }
-  
-.table1s{
-    font-family: 'Poppins';
-    color: #444;
-    border-collapse: collapse;
-    width: 95%;
-    border: 1px solid #f2f5f7;
-    margin-top: 16px;
-  }
-  .table1s tr th{
-    background: #dae3e7;
-    color: #000000;
-    font-weight: 30px;
-  
-  }
-  .table1s, th, td{
-    padding: 8px;
-    text-align: center;
-  }
-  .dropdown{
-    float: right;
-    right: 30px;
-  }
+.status-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+  background: #33b128;
+  border-radius: 20px;
+  color: #ffffff;
+  border: solid 0px;
+}
+.card-text-bg-dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 70;
+  padding: 120px 0;
+}
+.card-img-overlay {
+  position: absolute;
+  width: 800px;
+  height: 700px;
+  left: 300px;
+  top: 129px;
+  margin: 0 auto;
+  background: #fcfdfd;
+}
+.card-title {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.table1s {
+  font-family: 'Poppins';
+  color: #444;
+  border-collapse: collapse;
+  width: 95%;
+  border: 1px solid #f2f5f7;
+  margin-top: 16px;
+}
+.table1s tr th {
+  background: #dae3e7;
+  color: #000000;
+  font-weight: 30px;
+}
+.table1s,
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+.dropdown {
+  float: right;
+  right: 30px;
+}
