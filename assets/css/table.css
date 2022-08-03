@@ -1,6 +1,7 @@
 body {
   font-family: 'Poppins';
   font-style: normal;
+  padding: 50px;
 }
 .search {
   background-color: #7ec8bb;
@@ -113,16 +114,21 @@ ul#ditolak a#menu-ditolak{
 }
 
 .pengguna-btn {
-  position: absolute;
-  width: 174px;
-  height: 28px;
+  /* position: absolute;
+  
   background: #6cffdc;
   border-radius: 9px;
   border: none;
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 13px;
-  color: #000000;
+  color: #000000; */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  color: #696969;
+  background: #6cffdc;
+  border-radius: 20px;
 }
 .review {
   display: flex;
