@@ -87,7 +87,7 @@ ul#ditolak a#menu-ditolak {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   letter-spacing: 0.05em;
   color: #000000;
 }
@@ -387,22 +387,23 @@ ul#ditolak1 a#menu-ditolak{
     flex-grow: 0;
     border-radius: 10px;
 }
+------------------------------------
+
 .card-text-bg-dark {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 70;
-  padding: 120px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 120px;
 }
 .card-img-overlay {
-  position: absolute;
-  width: 800px;
-  height: 700px;
-  left: 300px;
-  top: 129px;
+  
+  width: 690px;
+  height: 670px;
+  left: 10px;
+  top: 559px;
   margin: 0 auto;
   background: #fcfdfd;
 }
@@ -413,12 +414,109 @@ ul#ditolak1 a#menu-ditolak{
   line-height: 45px;
   letter-spacing: 0.05em;
   color: #000000;
+  float: inline-start;
+
 }
-.isi-style1 {
+
+.table1s {
   font-family: 'Poppins';
-  font-weight: 200;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.05em;
+  color: #444;
+  border-collapse: collapse;
+  width: 95%;
+  border: 1px solid #f2f5f7;
+  margin-top: 16px;
+}
+.table1s tr th {
+  background: #dae3e7;
   color: #000000;
+  font-weight: 30px;
+}
+.table1s,
+th,
+td {
+  padding: 8px;
+}
+.dropdown {
+  float: right;
+  right: 40px;
+}
+------------------------POPUP----------------------------
+.popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.3s;
+}
+.popup__content {
+  width: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 50%) scale(0.25);
+  opacity: 0;
+
+  transition: all 0.5s 0.1s;
+  
+}
+.status-btn2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  
+  background: #ff0000;
+  border-radius: 20px;
+  color: #ffffff;
+  border: solid 0px;
+  
+}
+#popup:target {
+opacity: 1;
+visibility: visible;
+}
+#popup:target .popup__content {
+  opacity: 1;
+  transform: translate(-50%, 50%) scale(1);
+}
+.popup__close {
+  font-size: 30px;
+  color: #696969;
+}
+.popup__close:link 
+.popup__close:visited{
+  /* position: absolute;
+  top: 12px;
+  float: right;
+  right: 50px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 50px; */
+  line-height: 1;
+  transition: all 0.3s;
+}
+.popup__close:hover
+.popup__close:active{
+  color: #555;
+}
+.fa-file-image-o {
+  background: #D9FFDF;
+  width: 200px;
+  height: 200px;
+}
+ul#gagal a#menu-gagal,
+ul#pending1 a#menu-pending,
+ul#berhasil a#menu-berhasil{
+    color: #fcfdfd;
+    background: #7ec8bb;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 10px;
 }
