@@ -124,7 +124,8 @@ ul#ditolak a#menu-ditolak {
 .pengguna-btn {
   font-family: 'Poppins';
   font-style: normal;
-  color: #696969;
+  font-size: 13px;
+  color: #000000;
   background: #6cffdc;
   border-radius: 20px;
 }
