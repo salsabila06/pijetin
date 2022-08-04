@@ -122,13 +122,11 @@ ul#ditolak a#menu-ditolak {
 }
 
 .pengguna-btn {
-  background: #6cffdc;
-  border-radius: 9px;
-  border: none;
   font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 13px;
-  color: #000000;
+  font-style: normal;
+  color: #696969;
+  background: #6cffdc;
+  border-radius: 20px;
 }
 
 /* detail pengguna */
@@ -178,6 +176,17 @@ ul#ditolak a#menu-ditolak {
   padding: 7px;
   justify-content: center;
 }
+.card-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding: 50px 0;
+}
 
 /* review */
 .review {
@@ -225,55 +234,55 @@ ul#ditolak a#menu-ditolak {
   color: orange;
 }
 
+/* detail ulasan */
+.card-bdy h5 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 45px;
+  text-align: justify;
+  color: #000000;
+}
+
+.d-flex b,
+span {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+.bdy {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.bdy2 {
+  justify-content: center;
+}
+
+.pl-2 textarea {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  color: #000000;
+}
+
+/* .pl-2 .fa {
+  width: 30px;
+  height: 30px;
+} */
 /* .body-det {
   height: 100vh;
   width: 100vw;
 } */
-
-.det {
-  height: 100vh;
-  background: #ffffff;
-}
-.pembatalan {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 40px;
-  gap: 10px;
-
-  position: absolute;
-  width: 90vw;
-  height: 90vh;
-  margin: 50px 50px;
-  background: #ffffff;
-}
-
-.dtl-pembatalan {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 40px;
-  gap: 10px;
-
-  position: absolute;
-  width: 90vw;
-  height: 90vh;
-  margin: 50px 50px;
-  background: #ffffff;
-}
-
-.card-pembatalan {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 15px;
-  width: 45vw;
-  height: 30vh;
-  border: none;
-  margin-top: 22px;
-  margin-left: 59px;
-}
+/* det pembatalan */
 
 .card-title {
   font-family: 'Poppins';
@@ -302,9 +311,8 @@ ul#ditolak a#menu-ditolak {
 }
 
 .poto {
-  width: 162px;
-  height: 79px;
-  background: url(image);
+  width: 142px;
+  height: 69px;
   border-radius: 5px;
 }
 
@@ -312,11 +320,10 @@ ul#ditolak a#menu-ditolak {
   position: absolute;
   color: #ffffff;
   height: 30px;
-  width: 100px;
+  width: 80px;
   background: #ff0000;
   border-radius: 10px;
   border: none;
-  margin-left: 143px;
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 12px;
@@ -333,7 +340,61 @@ ul#ditolak a#menu-ditolak {
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 12px;
+  margin-left: 120px;
 }
+
+.pemb {
+  padding-top: 50px;
+  clear: both;
+}
+
+.leftcontent {
+  height: 100vh;
+  width: 60%;
+  float: left;
+}
+
+.bborder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 15px;
+  width: 80vw;
+  height: 80vh;
+  border: none;
+}
+
+.leftcontent h5 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.rightcontent {
+  height: 100vh;
+  float: right;
+  width: 40%;
+  padding: 100px 0;
+}
+
+.foto-list {
+  width: 162px;
+  height: 79px;
+  border-radius: 5px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.img-order {
+  width: 29px;
+  height: 29px;
+}
+
 .status-btn {
   display: flex;
   flex-direction: row;
@@ -379,13 +440,13 @@ ul a {
 }
 ul#diterima a#menu-diterima,
 ul#menunggu a#menu-menunggu-verifikasi,
-ul#ditolak1 a#menu-ditolak{
-    color: #fcfdfd;
-    background: #7ec8bb;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    border-radius: 10px;
+ul#ditolak1 a#menu-ditolak {
+  color: #fcfdfd;
+  background: #7ec8bb;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border-radius: 10px;
 }
 ------------------------------------
 
@@ -519,4 +580,111 @@ ul#berhasil a#menu-berhasil{
     order: 0;
     flex-grow: 0;
     border-radius: 10px;
+}
+
+/* alasan menolak */
+
+.body-als {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-als {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 10px;
+  gap: 10px;
+  width: 317px;
+  height: 310px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.form-check {
+  text-align: start;
+}
+.form-check-label {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  text-align: start;
+}
+
+.send {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+
+  width: 287px;
+  height: 33px;
+
+  background: #ffa6a6;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+/* footer pengguna */
+
+/* .pg {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  
+} */
+.pagination {
+  display: inline-block;
+}
+
+.page-item a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: all 0.3s;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+.page-item a span {
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 5rem 0.75rem;
+  text-align: end;
+}
+
+.pagination a.active {
+  color: #000000;
+  border-radius: 50%;
+  background-color: #a3ebd9;
+  text-decoration: none;
+  border: none;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #a3ebd9;
+  border-radius: 50%;
+  color: #000000;
 }
