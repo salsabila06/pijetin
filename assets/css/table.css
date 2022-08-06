@@ -498,10 +498,13 @@ td {
   float: right;
   right: 40px;
 }
-------------------------POPUP---------------------------- .popup {
+------------------------POPUP----------------------------
+/*detail verifikasi & riwayat transaksi*/
+ 
+.popup {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -513,9 +516,9 @@ td {
 .popup__content {
   width: 50%;
   background-color: #ffffff;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 5%;
+  top: -10%;
   left: 50%;
   transform: translate(-50%, 50%) scale(0.25);
   opacity: 0;
@@ -558,6 +561,8 @@ td {
 .popup__close:hover .popup__close:active {
   color: #555;
 }
+
+
 .fa-file-image-o {
   background: #d9ffdf;
   width: 200px;
@@ -573,7 +578,24 @@ ul#berhasil a#menu-berhasil {
   flex-grow: 0;
   border-radius: 10px;
 }
-
+.text-verifikasi {
+  font-family: 'Poppins';
+  color: #000;
+  font-weight: 200;
+  font-size: 15px;
+  
+  padding: 2px;
+}
+.fa-file-image-o {
+width: 207px;
+height: 200px;
+left: 59px;
+top: 268px;
+background: #D9FFDF;
+color: #BDBDBD;
+text-align: center;
+}
+------------------------
 /* alasan menolak */
 
 .body-als {
