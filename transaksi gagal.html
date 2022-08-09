@@ -18,22 +18,22 @@
 </head>
   <body >  
 <div class="content">
-    <h2 class="title ms-5">Verifikasi</h2>
+    <h2 class="title ms-5">Tranksaksi</h2>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menunggu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="gagal">
         <li class="nav-item">
-          <a class="nav-link active ms-5" id="menu-diterima" aria-current="page" href="verifikasi-diterima.html">Diterima</a>
+          <a class="nav-link active ms-5" id="menu-gagal" aria-current="page" href="transaksi gagal.html">Gagal</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active ms-5" id="menu-menunggu-verifikasi" aria-current="page" href="verifikasi-pending.html">Menunggu Verifikasi</a>
+            <a class="nav-link active ms-5" id="menu-waiting" aria-current="page" href="transaksi pending.html">Pending</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active ms-5" id="menu-ditolak" aria-current="page" href="verifikasi-ditolak.html">Ditolak</a>
+            <a class="nav-link active ms-5" id="menu-diterima" aria-current="page" href="transaksi berhasil.html">Berhasil</a>
         </li>
       </ul>
      
@@ -52,7 +52,9 @@
       <thead>
         <tr class="col-style">
           <th scope="col">Username</th>
-          <th scope="col">Email</th>
+          <th scope="col">Jenis Pijat</th>
+          <th scope="col">Tanggal Tranksaksi</th>
+          <th scope="col">Total Pembayaran</th>
           <th scope="col">Status</th>
           <th scope="col">Aksi</th>
         </tr>
@@ -62,51 +64,43 @@
           <td>
             <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
             Naswa Bila Zakia</td>
-          <td>atta@gmail.com</td>
-          <td>
-            <button class="status-btn" type="button">
-                
-            </button>
-        <td>
-            <button class="status-btn1" type="button">
-                Detail Verifikasi
+            <td>Pijat Prenatal</td>
+            <td>20/1/2022</td>
+            <td>Rp 60.000</td>
+            <td class="text-danger">Gagal</td>
+            <td><button class="status-btn3" type="button">
+              detail pemesanan
             </button>
         </td>
-            </td>
         </tr>
 
         <tr scope="row" class="isi-style">
             <td>
               <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
-              Dalia Amalia</td>
-            <td>cantik@gmail.com</td>
-            <td>
-                <button class="status-btn" type="button">
-                    
-                </button>
-              </td>
-              <td>
-                <button class="status-btn1" type="button">
-                    Detail Verifikasi
-                </button>
-            </td>
+              Dalia Amalia </td>
+              <td>Pijat Tradisional</td>
+              <td>30/1/2022</td>
+              <td>Rp 50.000</td>
+              <td class="text-danger">Gagal</td>
+              <td><button class="status-btn3" type="button">
+                  detail pemesanan
+              </button>
+          </td>
           </tr>
           
+        
           <tr scope="row" class="isi-style">
             <td>
               <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
-              Habib Rafi'i</td>
-            <td>habib456@gmail.com</td>
-            <td>
-                <button class="status-btn" type="button">
-                    
-                </button>
-              </td>
-            <td>
-                <button class="status-btn1" type="button">
-                    Detail Verifikasi
-                </button>
-            </td>
+              Habib Rafi’i</td>
+              <td>Pijat Jaringan dalam </td>
+              <td>1/2/2022</td>
+              <td>Rp 75.000</td>
+              <td class="text-danger">Gagal</td>
+              <td><button class="status-btn3" type="button">
+                  detail pemesanan
+              </button>
+          </td>
           </tr>
 
     </table>
