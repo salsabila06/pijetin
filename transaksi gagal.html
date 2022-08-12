@@ -68,7 +68,7 @@
             <td>20/1/2022</td>
             <td>Rp 60.000</td>
             <td class="text-danger">Gagal</td>
-            <td><button class="status-btn3" type="button">
+            <td><button onclick="on()" class="status-btn3" type="button">
               detail pemesanan
             </button>
         </td>
@@ -82,7 +82,7 @@
               <td>30/1/2022</td>
               <td>Rp 50.000</td>
               <td class="text-danger">Gagal</td>
-              <td><button class="status-btn3" type="button">
+              <td><button onclick="on()" class="status-btn3" type="button">
                   detail pemesanan
               </button>
           </td>
@@ -97,17 +97,90 @@
               <td>1/2/2022</td>
               <td>Rp 75.000</td>
               <td class="text-danger">Gagal</td>
-              <td><button class="status-btn3" type="button">
+              <td><button onclick="on()" class="status-btn3" type="button">
                   detail pemesanan
               </button>
           </td>
           </tr>
-
     </table>
-
-   
   </div>
 </div>
+
+
+  <div id="overlay" onclick="off()">
+    <div class="card-overlay">
+      <center>
+        <div class="card-container">
+          <h4 class="title-profil">TRANSAKSI GAGAL</h4>
+          <img class="close" src="assets/img/Close_round_fill.svg" alt="user" />
+          <div class="d-flex align-items-center">
+            <div>
+              <img src="assets/img/pijat-parental.svg" alt="" class="poto" />
+            </div>
+            <div>
+              <p class="d-flex flex-column mb-0">
+                <b>Pijat Prenatal <br class="small text" />Order dari :</b
+                ><span>
+                  <img src="assets/img/foto-user.svg" alt="" />
+                  Naswa Bila Zakia</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="row-b">
+            <div class="column mx-2">
+              <table>
+                <tr style="border-top: 1px solid #000000">
+                  <th>Pijat Prenatal</th>
+                  <th>Rp150.000</th>
+                </tr>
+                <tr>
+                  <td class="me-3">1 Jam</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>30 Juni 2022</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>19.00</td>
+                  <td></td>
+                </tr>
+                <tr style="border-bottom: 1px solid #000000">
+                  <td>Disc. 50%</td>
+                  <td>- Rp75.000</td>
+                </tr>
+                <tr>
+                  <td>BRI Virtual Account</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #000000" >
+                  <td>Total</td>
+                  <td>Rp75.000</td>
+                </tr>
+                <tr >
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </center>
+    </div>
+  </div>
+
+  <!-- script -->
+  <script src="js/script.js"></script>
+
+  <!-- <footer>
+    <p>
+      Created with <i class="fa fa-heart"></i> by
+      <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+      - Read how I created this
+      <a target="_blank" href="https://florin-pop.com/blog/2019/04/profile-card-design">here</a>
+      - Design made by
+      <a target="_blank" href="https://dribbble.com/shots/6276930-Profile-Card-UI-Design">Ildiesign</a>
+    </p>
+  </footer> -->
 
 
 
