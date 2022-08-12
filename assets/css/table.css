@@ -481,19 +481,20 @@ ul#ditolak1 a#menu-ditolak {
   font-family: 'Poppins';
   color: #444;
   border-collapse: collapse;
-  width: 95%;
+  width:max-content;
   border: 1px solid #f2f5f7;
-  margin-top: 16px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 .table1s tr th {
   background: #dae3e7;
   color: #000000;
-  font-weight: 30px;
+  font-weight: 6px;
 }
 .table1s,
 th,
 td {
-  padding: 8px;
+  padding: 5px;
 }
 .dropdown {
   float: right;
@@ -817,4 +818,81 @@ text-align: center;
   font-size: 18px;
   line-height: 20px;
   color: #696969;
+}
+.text-verifikasi {
+  float: right;
+}
+/*button*/
+.btn-btn-primary {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+  background: #009d76;
+  border-radius: 20px;
+  color: #ffffff;
+  border: solid 0px;
+}
+.btn-btn-primary:hover {
+  background-color: #fcfdfd;
+  color: #000000;
+  border: 1px solid black;
+}
+.btn-btn-primary1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+  background: #FF0000;
+  border-radius: 20px;
+  color: #ffffff;
+  border: solid 0px;
+}
+.btn-btn-primary1:hover {
+  background-color: #fcfdfd;
+  color: #000000;
+  border: 1px solid black;
+}
+.btn-btn-primary2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+  background: #50ABFF;
+  border-radius: 20px;
+  color: #ffffff;
+  border: solid 0px;
+} 
+.btn-btn-primary2:hover {
+  background-color: #fcfdfd;
+  color: #000000;
+  border: 1px solid black;
+}
+.btn-btn-primary3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+
+  width: 287px;
+  height: 33px;
+
+  background: #72bbff;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.btn-btn-primary3:hover {
+  background-color: #50ABFF;
+  color: #fcfdfd;
+  border: 1px solid black;
 }

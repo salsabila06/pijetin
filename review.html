@@ -48,8 +48,8 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                 </div></td>
-                <td> <a href="#popup" class="btn">Detail Ulasan</a></td>
-                
+                <td><button class="btn-btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Ulasan</button>
+                </td>
               </tr>
             </tbody>
       
@@ -145,13 +145,16 @@
   </div>
 </div>
 
-<div class="popup" id="popup">
-  <div class="popup__content">
-    <a href="#" class="popup__close float-end">&times;</a> 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Ulasan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
 <section class="det-ulasan">
   <div class="container py-5">
-    
-            <h5>Detail Ulasan</h5>
             <div class="d-flex align-items-center">
               <div>
                 <img src="assets/img/pijat-parental.svg" alt="" class="poto" />
