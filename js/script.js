@@ -7,3 +7,13 @@ window.addEventListener('scroll', function () {
     navbar.classList.replace('nav-color', 'bg-transparent');
   }
 });
+
+// overlay
+
+function on() {
+  document.getElementById('overlay').style.display = 'block';
+}
+
+function off() {
+  document.getElementById('overlay').style.display = 'none';
+}

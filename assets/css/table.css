@@ -128,6 +128,7 @@ ul#ditolak a#menu-ditolak {
   color: #000000;
   background: #6cffdc;
   border-radius: 20px;
+  border: none;
 }
 
 /* detail pengguna */
@@ -565,7 +566,6 @@ td {
   color: #555;
 }
 
-
 .fa-file-image-o {
   background: #d9ffdf;
   width: 200px;
@@ -586,20 +586,18 @@ ul#berhasil a#menu-berhasil {
   color: #000;
   font-weight: 200;
   font-size: 15px;
-  
-  
   padding: 2px;
 }
 .fa-file-image-o {
-width: 207px;
-height: 200px;
-left: 59px;
-top: 268px;
-background: #D9FFDF;
-color: #BDBDBD;
-text-align: center;
+  width: 207px;
+  height: 200px;
+  left: 59px;
+  top: 268px;
+  background: #d9ffdf;
+  color: #bdbdbd;
+  text-align: center;
 }
-------------------------
+
 /* alasan menolak */
 
 .body-als {
@@ -708,7 +706,7 @@ text-align: center;
 }
 
 /* det pembatalan finance */
-#kirim-btn {
+.kirim-btn {
   position: absolute;
   width: 245px;
   height: 30px;
@@ -817,4 +815,104 @@ text-align: center;
   font-size: 18px;
   line-height: 20px;
   color: #696969;
+}
+
+.close {
+  width: 65px;
+  height: 65px;
+}
+
+/* overlay fin */
+.row-b {
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.row-b.column {
+  float: left;
+  width: 0%;
+  padding: 5px;
+}
+.row-b .row-b.column th,
+td {
+  text-align: left;
+
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.row-b::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+/*  */
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* butkti transfer */
+.bukti {
+  font-family: 'Inter', sans-serif;
+}
+.cardcontainer {
+  width: 463px;
+  height: 568.73px;
+  left: 0px;
+  top: 0px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #000000;
+  padding-top: 20px;
+  position: relative;
+}
+
+.col table {
+  width: 85%;
+  margin-top: 10px;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: justify;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.col span {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+.col p {
+  margin-top: 10px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.main-footer {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: start;
+  margin-left: 20px;
+  color: #000000;
 }
