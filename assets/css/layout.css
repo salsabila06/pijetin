@@ -18,13 +18,21 @@ nav {
     padding: 1em;
     height: 100px;
 }
-.navbar img{
+.navbar #brand{
     position: absolute;
     width: 104px;
     height: 38px;
     left: 70px;
     top: 30px;
+
 }
+
+/* .dropdown-item{
+    height: 50px;
+    width: 600px;
+    display: flex;
+    align-items: flex-start;
+} */
 .search {
     background-color: #7ec8bb;
     font-family: 'Poppins';
@@ -79,7 +87,7 @@ nav {
 span {
     display:block;
     font-size:1.4em;
-    margin-bottom:1em;
+    margin-bottom:1.2em;
     
 }
 
