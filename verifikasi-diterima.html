@@ -62,13 +62,9 @@
             <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
             Naswa Bila Zakia</td>
           <td>atta@gmail.com</td>
+          <td>Diterima</td>
           <td>
-            <button class="status-btn" type="button">
-                Diterima
-            </button>
-            </td>
-          <td>
-              <a href="#popup" class="btn">Detail Verifikasi</a>
+            <button class="btn-btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Verifikasi</button>
             </td>
         </tr>
 
@@ -77,13 +73,9 @@
             <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
             Naswa Bila Zakia</td>
           <td>atta@gmail.com</td>
+          <td>.</td>
           <td>
-            <button class="status-btn" type="button">
-                Diterima
-            </button>
-            </td>
-          <td>
-              <a href="#popup" class="btn">Detail Verifikasi</a>
+            <button class="btn-btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Verifikasi</button>
             </td>
         </tr>
 
@@ -92,13 +84,9 @@
             <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
             Naswa Bila Zakia</td>
           <td>atta@gmail.com</td>
+          <td>.</td>
           <td>
-            <button class="status-btn" type="button">
-                Diterima
-            </button>
-            </td>
-          <td>
-              <a href="#popup" class="btn">Detail Verifikasi</a>
+            <button class="btn-btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Verifikasi</button>
             </td>
         </tr>
 
@@ -107,16 +95,10 @@
               <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
               Dalia Amalia</td>
             <td>cantik@gmail.com</td>
+            <td>.</td>
             <td>
-                <button class="status-btn" type="button">
-                    Diterima
-                </button>
+              <button class="btn-btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Verifikasi</button>
               </td>
-            <td>
-                <button class="status-btn1" type="button">
-                    Detail Verifikasi
-                </button>
-            </td>
           </tr>
 
         <tr scope="row" class="isi-style">
@@ -124,28 +106,23 @@
               <img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
               Naswa Bila Zakia</td>
             <td>atta@gmail.com</td>
+            <td>.</td>
             <td>
-                <button class="status-btn" type="button">
-                    Diterima
-                </button>
-              </td>
-            <td>
-                <button class="status-btn1" type="button">
-                    Detail Verifikasi
-                </button>
+              <button class="btn-btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Verifikasi</button>
               </td>
         </tr>
     </table>
 
-   <div class="popup" id="popup">
-    <div class="popup__content">
-      <a href="#" class="popup__close float-end">&times;</a> 
-      
-      <h2 class="title ms-5">Detail Verifikasi</h2>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">Detail Verifikasi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="d-flex justify-content-start">
           <img class="round" src="assets/img/foto-user.svg" alt="user" />
-            <table class="text-verifikasi float-end">
+          <table>
               <tr>
                 <td>Username</td>
                 <td>:</td>
@@ -172,17 +149,60 @@
                 <td>081223127568</td>
               </tr>
               </table>
+            </div>
+    
         </a>
       </ul>
       <ul class="nav nav-pills flex-column mb-auto">
       <li><i class="fa fa-picture-o"> <span >Foto KTP</span></i> </li>
       <li><i class="fa fa-file-image-o"> <span ></span></i> </li>
-      <td>
-        <a href="#popup" class="btn">Tolak</a>
-      </td>
-      <td>
-        <a href="#popup" class="btn">Setujui Verifikasi</a>
-      </td>
+      <div class="modal-footer">
+        <td><button class="btn-btn-primary1" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Tolak</button></td>
+        <td><button class="btn-btn-primary2" data-bs-target="#" data-bs-toggle="modal" data-bs-dismiss="modal">Setujui Verifikasi</button></td>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2">Mengapa ingin menolak?</h5>
+      </div>
+      <div class="modal-body">
+          <form>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="alasan1" />
+              <label class="form-check-label" for="">KTP tidak jelas</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="alasan2" />
+              <label class="form-check-label" for="">Terdeteksi spam</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="alasan3" />
+              <label class="form-check-label" for="">Data tidak sinkron</label>
+            </div>
+            <div class="form-text">
+              <input class="form-control" rows="3" placeholder="lainnya..."></input>
+            </div>
+            <div>
+            <div class="modal-footer">
+                <td><button class="btn-btn-primary2" data-bs-target="#" data-bs-toggle="modal" data-bs-dismiss="modal">Kirim</button></td>
+                <td><button class="btn-btn-primary1" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Batalkan</button></td>
+                
+            </div>
+              
+            </div>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+
+      
+      
 
       </div>
     </div>
