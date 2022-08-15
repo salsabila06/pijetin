@@ -450,8 +450,7 @@ ul#ditolak1 a#menu-ditolak {
   flex-grow: 0;
   border-radius: 10px;
 }
------------------------------------- 
-.card-text-bg-dark {
+------------------------------------ .card-text-bg-dark {
   position: fixed;
   top: 0;
   left: 0;
@@ -549,8 +548,6 @@ td {
 .popup__close {
   font-size: 30px;
   color: #696969;
-  
-  
 }
 .popup__close:link .popup__close:visited {
   /* position: absolute;
@@ -813,7 +810,7 @@ ul#berhasil a#menu-berhasil {
   border: none;
   font-family: 'Poppins';
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 20px;
   color: #696969;
 }
@@ -993,4 +990,9 @@ td {
   text-align: start;
   margin-left: 20px;
   color: #000000;
+}
+
+#confr-btn {
+  padding: 10px;
+  margin: 10px 50px;
 }
