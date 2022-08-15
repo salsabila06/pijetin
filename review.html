@@ -48,7 +48,8 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                 </div></td>
-                <td><button onclick="on()" class="pengguna-btn">Detail Ulasan</button></td>    
+                <td><button class="btn-btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Ulasan</button>
+                </td>
               </tr>
             </tbody>
       
@@ -63,11 +64,7 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star"></span>
                 </div></td>
-
-                <td><button onclick="on()" class="pengguna-btn">Detail Ulasan</button></td>
-
                 <td>Baik</td>
-
                 
               </tr>
             </tbody>
@@ -83,11 +80,7 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star"></span>
                 </div></td>
-
-                <td><button onclick="on()" class="pengguna-btn">Detail Ulasan</button></td>
-
                 <td>Baik</td>
-
                 
               </tr>
             </tbody>
@@ -104,11 +97,7 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star"></span>
                 </div></td>
-
-                <td><button onclick="on()" class="pengguna-btn">Detail Ulasan</button></td>
-
                 <td>Baik</td>
-
                 
               </tr>
             </tbody>
@@ -123,13 +112,9 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
                 </div></td>
-
-                <td><button onclick="on()" class="pengguna-btn">Detail Ulasan</button></td>
-
                 <td>Baik</td>
-
                 
               </tr>
             </tbody>
@@ -160,13 +145,16 @@
   </div>
 </div>
 
-<div class="popup" id="popup">
-  <div class="popup__content">
-    <a href="#" class="popup__close float-end">&times;</a> 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Ulasan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
 <section class="det-ulasan">
   <div class="container py-5">
-    
-            <h5>Detail Ulasan</h5>
             <div class="d-flex align-items-center">
               <div>
                 <img src="assets/img/pijat-parental.svg" alt="" class="poto" />
@@ -181,30 +169,6 @@
                 </p>
               </div>
             </div>
-
-
-<section class="det-ulasan" id="overlay" onclick="off()">
-  <div class="container py-5">
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-8 col-lg-6 col-xl-4">
-        <div class="card rounded-3">
-          <div class="card-bdy mx-1 my-2 ms-3">
-            <h5>Detail Ulasan</h5>
-            <div class="d-flex align-items-center">
-              <div>
-                <img src="assets/img/pijat-parental.svg" alt="" class="poto" />
-              </div>
-              <div>
-                <p class="d-flex flex-column mb-0">
-                  <b>Pijat Prenatal <br class="small text" />Order dari :</b
-                  ><span>
-                    <img src="assets/img/foto-user.svg" alt="" />
-                    Naswa Bila Zakia</span
-                  >
-                </p>
-              </div>
-            </div>
-
 
             <div class="bdy d-flex">
               <div class="col-8">Pijat Prenatal</div>
@@ -261,11 +225,6 @@
     </div>
   </div>
 </section>
-
-
-<!-- script -->
-<script src="js/script.js"></script>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
