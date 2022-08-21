@@ -405,6 +405,11 @@ body {
   border-radius: 10px;
 }
 
+.laki:hover {
+  background-color: #d5edff;
+  transition: all 0.3s;
+}
+
 .pr {
   display: flex;
   flex-direction: column;
@@ -415,6 +420,11 @@ body {
   border: none;
   background: #f7dfff;
   border-radius: 10px;
+}
+
+.pr:hover {
+  background-color: #f0c7ff;
+  transition: all 0.3s;
 }
 
 .bookingacc {
