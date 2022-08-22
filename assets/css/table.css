@@ -49,7 +49,7 @@ ul a {
   text-decoration: none;
 }
 
-/* ul#berhasil a#menu-berhasil,
+ul#berhasil a#menu-berhasil,
 ul#pending a#menu-pending,
 ul#ditolak a#menu-ditolak {
   color: #fcfdfd;
@@ -58,7 +58,7 @@ ul#ditolak a#menu-ditolak {
   order: 0;
   flex-grow: 0;
   border-radius: 10px;
-} */
+}
 .pengguna {
   display: flex;
   flex-direction: column;
@@ -442,20 +442,14 @@ ul a {
 }
 ul#diterima a#menu-diterima,
 ul#menunggu a#menu-menunggu-verifikasi,
-ul#ditolak1 a#menu-ditolak,
-ul#transaksi a#menu-trans,
-ul#daftar a#menu-mitra,
-ul#daftar1 a#menu-pelanggan,
-ul#berhasil a#menu-berhasil,
-ul#gagal a#menu-gagal,
-ul#pending1 a#menu-waiting,
-ul#pending a#menu-pending,
-ul#ditolak a#menu-ditolak {
-  letter-spacing: 0.05em;
-  text-decoration-line: underline;
-  color: #009d76;
+ul#ditolak1 a#menu-ditolak {
+  color: #fcfdfd;
+  background: #7ec8bb;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border-radius: 10px;
 }
-
 .card-text-bg-dark {
   position: fixed;
   top: 0;
@@ -487,7 +481,7 @@ ul#ditolak a#menu-ditolak {
   font-family: 'Poppins';
   color: #444;
   border-collapse: collapse;
-  width: max-content;
+  width:max-content;
   border: 1px solid #f2f5f7;
   margin-top: 10px;
   font-size: 15px;
@@ -575,7 +569,7 @@ td {
   width: 200px;
   height: 200px;
 }
-/* ul#gagal a#menu-gagal,
+ul#gagal a#menu-gagal,
 ul#pending1 a#menu-pending,
 ul#berhasil a#menu-berhasil {
   color: #fcfdfd;
@@ -584,7 +578,7 @@ ul#berhasil a#menu-berhasil {
   order: 0;
   flex-grow: 0;
   border-radius: 10px;
-} */
+}
 .text-verifikasi {
   font-family: 'Poppins';
   color: #000;
@@ -846,7 +840,7 @@ ul#berhasil a#menu-berhasil {
   align-items: flex-start;
   padding: 5px;
   gap: 10px;
-  background: #ff0000;
+  background: #FF0000;
   border-radius: 20px;
   color: #ffffff;
   border: solid 0px;
@@ -862,11 +856,11 @@ ul#berhasil a#menu-berhasil {
   align-items: flex-start;
   padding: 5px;
   gap: 10px;
-  background: #50abff;
+  background: #50ABFF;
   border-radius: 20px;
   color: #ffffff;
   border: solid 0px;
-}
+} 
 .btn-btn-primary2:hover {
   background-color: #fcfdfd;
   color: #000000;
@@ -893,8 +887,33 @@ ul#berhasil a#menu-berhasil {
   flex-grow: 0;
 }
 .btn-btn-primary3:hover {
-  background-color: #50abff;
+  background-color: #50ABFF;
   color: #fcfdfd;
+  border: 1px solid black;
+}
+.btn-btn-primary4 {
+  height: 47px;
+  width: 235px;
+  text-align: center;
+  border-radius: 35.69696807861328px;
+  background: #ffffff;
+  
+}
+.btn-btn-primary4:hover {
+  border: 1px solid black;
+  color: #000000;
+}
+.btn-btn-primary5 {
+  height: 47px;
+  width: 235px;
+  color: #ffffff;
+  border-radius: 35.69696807861328px;
+  background: #00CA97;
+  border: none; 
+}
+.btn-btn-primary5:hover {
+  background-color: #fcfdfd;
+  color: #000000;
   border: 1px solid black;
 }
 
@@ -1002,3 +1021,15 @@ td {
   padding: 10px;
   margin: 10px 50px;
 }
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #000000;
+  position: relative;
+  height:auto;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+}
+
