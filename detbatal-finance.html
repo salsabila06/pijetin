@@ -45,10 +45,7 @@ Bla Bla Bla Bla Bla BlaBlaBla Bla Bla BlaBlaBlaBlaBla
             >
           </div>
         </div>
-        <div>
-          <button class="decline">Tolak</button>
-          <button class="accept">Setujui Pembatalan</button>
-        </div>
+        
       </div>
     </div>
 
@@ -93,12 +90,12 @@ Bla Bla Bla Bla Bla BlaBlaBla Bla Bla BlaBlaBlaBlaBla
         <div class="ml-auto green">Rp.75.000</div>
       </div>
 
-      <div class="text-center">
+      <!--<div class="text-center">
         <button onclick="on()" type="submit" class="kirim-btn">Kirim Saldo</button>
       </div>
     </div>
 
-    <!-- overlay ke-1 -->
+    <!-- overlay ke-1 
 
     <div class="ovrlay-detbatal" id="overlay" onclick="off()">
       <div class="card-overlay">
@@ -114,10 +111,10 @@ Bla Bla Bla Bla Bla BlaBlaBla Bla Bla BlaBlaBlaBlaBla
           </div>
         </center>
       </div>
-    </div>
+    </div>-->
 
     <!-- overlay 2  Belum bisa ditampilkan setelah klik button 'ya' pada saldo refund
-    -->
+    
 
     <div class="ovrlay-detbatal" id="overlay" onclick="off()">
       <div class="card-text-bg-dark">
@@ -131,38 +128,52 @@ Bla Bla Bla Bla Bla BlaBlaBla Bla Bla BlaBlaBlaBlaBla
           </center>
         </div>
       </div>
-    </div>
+    </div>-->
 
-    <!--<div class="text-center">
+    <div class="text-center">
       <td><button class="kirim-btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Kirim Saldo</button></td>
     </div>
   </div>
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">Detail Verifikasi</h5>
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      
+        <div class="">
+        </div>
+        
+          <div class="modal-content">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-            <h6 class="judul">Saldo sebanyak Rp 75.000 akan dikembalikan ke pengguna</h6>
+            <h6 class="judul">Saldo sebanyak <font color="green">Rp 75.000</font> akan dikembalikan ke pengguna</h6>
             <p class="paragrap">Anda yakin?</p>
 
-            <div class="text-center d-flex my-5 p-5">
-                <td><button class="btn-btn-primary1" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Ya</button></td>
-                <td><button class="btn-btn-primary2" data-bs-target="#" data-bs-toggle="modal" data-bs-dismiss="modal">Tidak</button></td>
-              </div>
+            <div class="text-center my-2 p-2">
+              <td><button class="btn-btn-primary4" data-bs-target="#" data-bs-toggle="modal" data-bs-dismiss="modal">Tidak</button></td>
+              <td><button class="btn-btn-primary5" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Ya</button></td>
+            </div>
             </div>
           </div>
-          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                <div class="card-container">
-                  <img src="assets/img/Check_round_fill.svg" alt="" class="notif-cek" />
-    
-                  <p class="notip my-4 ms-4">Saldo berhasil dikembalikan</p>
-                </div>
+        
 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="">
+          
+        </div>
+        <div class="modal-body">
+          
+            <div class="card-container">
+              <img src="assets/img/Check_round_fill.svg" alt="" class="notif-cek" />
+
+              <p class="notip my-4 ms-4">Saldo berhasil dikembalikan</p>
+            </div>
+      
+        </div>
+        </div>
+      </div>
+    </div>
     <!-- script -->
     <script src="js/script.js"></script>
 

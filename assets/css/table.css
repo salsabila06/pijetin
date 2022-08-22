@@ -450,7 +450,7 @@ ul#ditolak1 a#menu-ditolak {
   flex-grow: 0;
   border-radius: 10px;
 }
------------------------------------- .card-text-bg-dark {
+.card-text-bg-dark {
   position: fixed;
   top: 0;
   left: 0;
@@ -891,6 +891,31 @@ ul#berhasil a#menu-berhasil {
   color: #fcfdfd;
   border: 1px solid black;
 }
+.btn-btn-primary4 {
+  height: 47px;
+  width: 235px;
+  text-align: center;
+  border-radius: 35.69696807861328px;
+  background: #ffffff;
+  
+}
+.btn-btn-primary4:hover {
+  border: 1px solid black;
+  color: #000000;
+}
+.btn-btn-primary5 {
+  height: 47px;
+  width: 235px;
+  color: #ffffff;
+  border-radius: 35.69696807861328px;
+  background: #00CA97;
+  border: none; 
+}
+.btn-btn-primary5:hover {
+  background-color: #fcfdfd;
+  color: #000000;
+  border: 1px solid black;
+}
 
 .close {
   width: 65px;
@@ -996,3 +1021,15 @@ td {
   padding: 10px;
   margin: 10px 50px;
 }
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #000000;
+  position: relative;
+  height:auto;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+}
+
