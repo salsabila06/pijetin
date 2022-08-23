@@ -49,7 +49,7 @@ ul a {
   text-decoration: none;
 }
 
-ul#berhasil a#menu-berhasil,
+/* ul#berhasil a#menu-berhasil,
 ul#pending a#menu-pending,
 ul#ditolak a#menu-ditolak {
   color: #fcfdfd;
@@ -58,7 +58,7 @@ ul#ditolak a#menu-ditolak {
   order: 0;
   flex-grow: 0;
   border-radius: 10px;
-}
+} */
 .pengguna {
   display: flex;
   flex-direction: column;
@@ -442,14 +442,20 @@ ul a {
 }
 ul#diterima a#menu-diterima,
 ul#menunggu a#menu-menunggu-verifikasi,
-ul#ditolak1 a#menu-ditolak {
-  color: #fcfdfd;
-  background: #7ec8bb;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  border-radius: 10px;
+ul#ditolak1 a#menu-ditolak,
+ul#transaksi a#menu-trans,
+ul#daftar a#menu-mitra,
+ul#daftar1 a#menu-pelanggan,
+ul#berhasil a#menu-berhasil,
+ul#gagal a#menu-gagal,
+ul#pending1 a#menu-waiting,
+ul#pending a#menu-pending,
+ul#ditolak a#menu-ditolak {
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  color: #009d76;
 }
+
 .card-text-bg-dark {
   position: fixed;
   top: 0;
@@ -481,7 +487,7 @@ ul#ditolak1 a#menu-ditolak {
   font-family: 'Poppins';
   color: #444;
   border-collapse: collapse;
-  width:max-content;
+  width: max-content;
   border: 1px solid #f2f5f7;
   margin-top: 10px;
   font-size: 15px;
@@ -569,7 +575,7 @@ td {
   width: 200px;
   height: 200px;
 }
-ul#gagal a#menu-gagal,
+/* ul#gagal a#menu-gagal,
 ul#pending1 a#menu-pending,
 ul#berhasil a#menu-berhasil {
   color: #fcfdfd;
@@ -578,7 +584,7 @@ ul#berhasil a#menu-berhasil {
   order: 0;
   flex-grow: 0;
   border-radius: 10px;
-}
+} */
 .text-verifikasi {
   font-family: 'Poppins';
   color: #000;
@@ -840,7 +846,7 @@ ul#berhasil a#menu-berhasil {
   align-items: flex-start;
   padding: 5px;
   gap: 10px;
-  background: #FF0000;
+  background: #ff0000;
   border-radius: 20px;
   color: #ffffff;
   border: solid 0px;
@@ -856,11 +862,11 @@ ul#berhasil a#menu-berhasil {
   align-items: flex-start;
   padding: 5px;
   gap: 10px;
-  background: #50ABFF;
+  background: #50abff;
   border-radius: 20px;
   color: #ffffff;
   border: solid 0px;
-} 
+}
 .btn-btn-primary2:hover {
   background-color: #fcfdfd;
   color: #000000;
@@ -887,7 +893,7 @@ ul#berhasil a#menu-berhasil {
   flex-grow: 0;
 }
 .btn-btn-primary3:hover {
-  background-color: #50ABFF;
+  background-color: #50abff;
   color: #fcfdfd;
   border: 1px solid black;
 }
