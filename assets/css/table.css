@@ -450,7 +450,7 @@ ul#ditolak1 a#menu-ditolak {
   flex-grow: 0;
   border-radius: 10px;
 }
------------------------------------- .card-text-bg-dark {
+.card-text-bg-dark {
   position: fixed;
   top: 0;
   left: 0;
@@ -891,6 +891,31 @@ ul#berhasil a#menu-berhasil {
   color: #fcfdfd;
   border: 1px solid black;
 }
+.btn-btn-primary4 {
+  height: 47px;
+  width: 235px;
+  text-align: center;
+  border-radius: 35.69696807861328px;
+  background: #ffffff;
+  
+}
+.btn-btn-primary4:hover {
+  border: 1px solid black;
+  color: #000000;
+}
+.btn-btn-primary5 {
+  height: 47px;
+  width: 235px;
+  color: #ffffff;
+  border-radius: 35.69696807861328px;
+  background: #00CA97;
+  border: none; 
+}
+.btn-btn-primary5:hover {
+  background-color: #fcfdfd;
+  color: #000000;
+  border: 1px solid black;
+}
 
 .close {
   width: 65px;
@@ -995,90 +1020,4 @@ td {
 #confr-btn {
   padding: 10px;
   margin: 10px 50px;
-}
-
-/* info */
-
-.info-dasar{
-    position: relative;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height */
-
-    letter-spacing: 0.05em;
-    color: #000000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    margin: 1em;
-    padding: 1em;
- 
-}
-.info-kontak{
-  position: relative;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-size: 18px;
-  line-height: 20px;
-  /* identical to box height */
-
-  letter-spacing: 0.05em;
-  color: #000000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 1em;
-
-}
-
-/* dashboard finance */
-
-.total-pendpt{
-  position: relative;
-  font-family: 'Poppins';
-  font-style: normal;
-  height: 270px;
-  /* identical to box height */
-
-  letter-spacing: 0.05em;
-  color: #000000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 1em;
-
-}
-
-.menunggu-konfirmasi{
-  position: relative;
-  font-family: 'Poppins';
-  font-style: normal;
-  /* identical to box height */
-
-  letter-spacing: 0.05em;
-  color: #000000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 1em;
-}
-
-.total-pendpt-perbln{
-  position: relative;
-  font-family: 'Poppins';
-  font-style: normal;
-  width: 370px;
-  height: 170px;
-  /* identical to box height */
-
-  letter-spacing: 0.05em;
-  color: #000000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 1em;
-}
-.total-pendpt-perbln #month{
-  color: #696969;
 }
