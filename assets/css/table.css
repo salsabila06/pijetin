@@ -126,9 +126,14 @@ ul#ditolak a#menu-ditolak {
   font-style: normal;
   font-size: 13px;
   color: #000000;
+  text-align: center;
+  line-height: 20px;
   background: #6cffdc;
   border-radius: 20px;
   border: none;
+  text-decoration: none;
+  width: 154px;
+  height: 25px;
 }
 
 /* detail pengguna */
