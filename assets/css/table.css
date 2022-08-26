@@ -730,6 +730,11 @@ ul#berhasil a#menu-berhasil {
   line-height: 22px;
   text-align: center;
 }
+.kirim-btn:hover{
+  background-color: #fcfdfd;
+  color: #000000;
+  border: 1px solid black;
+}
 
 .ovrlay-detbatal {
   background-color: #ffffff;

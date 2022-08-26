@@ -90,12 +90,13 @@ Bla Bla Bla Bla Bla BlaBlaBla Bla Bla BlaBlaBlaBlaBla
         <div class="ml-auto green">Rp.75.000</div>
       </div>
 
+      
       <!--<div class="text-center">
         <button onclick="on()" type="submit" class="kirim-btn">Kirim Saldo</button>
       </div>
     </div>
 
-    <!-- overlay ke-1 
+     overlay ke-1 
 
     <div class="ovrlay-detbatal" id="overlay" onclick="off()">
       <div class="card-overlay">
@@ -141,18 +142,29 @@ Bla Bla Bla Bla Bla BlaBlaBla Bla Bla BlaBlaBlaBlaBla
         </div>
         
           <div class="modal-content">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>--->
             <h6 class="judul">Saldo sebanyak <font color="green">Rp 75.000</font> akan dikembalikan ke pengguna</h6>
             <p class="paragrap">Anda yakin?</p>
 
             <div class="text-center my-2 p-2">
               <td><button class="btn-btn-primary4" data-bs-target="#" data-bs-toggle="modal" data-bs-dismiss="modal">Tidak</button></td>
-              <td><button class="btn-btn-primary5" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Ya</button></td>
-            </div>
+              <td><button class="btn-btn-primary5" id="btn" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal" data-bs-dismiss="modal">Ya</button></td>
+            
+           <script>
+            const btn = document.getElementById('btn');
+            btn.addEventListener('click', function(){
+              Swal.fire({
+                title: 'Saldo berhasil dikembalikan',
+                icon: 'success',
+                showConfirmButton: false,
+              })
+            });
+            </script>
+          </div>
             </div>
           </div>
         
-
+   
         </div>
       </div>
     </div>
@@ -162,7 +174,9 @@ Bla Bla Bla Bla Bla BlaBlaBla Bla Bla BlaBlaBlaBlaBla
         <div class="">
           
         </div>
-        <div class="modal-body">
+
+        
+        <!--<div class="modal-body">
           
             <div class="card-container">
               <img src="assets/img/Check_round_fill.svg" alt="" class="notif-cek" />
@@ -173,10 +187,10 @@ Bla Bla Bla Bla Bla BlaBlaBla Bla Bla BlaBlaBlaBlaBla
         </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <!-- script -->
     <script src="js/script.js"></script>
-
+    <script src="dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
