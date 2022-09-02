@@ -136,6 +136,22 @@ ul#ditolak a#menu-ditolak {
   height: 25px;
 }
 
+.btn-tambah {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  background: #00CA97;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  margin-left: 40px;
+  height: 37px;
+  
+}
+
 /* detail pengguna */
 
 .body-pengguna {
@@ -445,21 +461,25 @@ ul a {
   padding: 10px;
   text-decoration: none;
 }
+ul#judul-1 a#menu-1,
+ul#judul-2 a#menu-2,
+ul#judul-3 a#menu-3,
+ul#data1 a#data-admin,
+ul#data2 a#data-finance,
+ul#daftar1 a#menu-pelanggan,
 ul#diterima a#menu-diterima,
 ul#menunggu a#menu-menunggu-verifikasi,
 ul#ditolak1 a#menu-ditolak,
 ul#transaksi a#menu-trans,
 ul#daftar a#menu-mitra,
 ul#daftar1 a#menu-pelanggan,
-ul#berhasil a#menu-berhasil,
 ul#gagal a#menu-gagal,
-ul#pending1 a#menu-waiting,
-ul#pending a#menu-pending,
-ul#ditolak a#menu-ditolak {
+ul#pending1 a#menu-waiting{
   letter-spacing: 0.05em;
   text-decoration-line: underline;
   color: #009d76;
 }
+
 
 .card-text-bg-dark {
   position: fixed;
@@ -580,16 +600,6 @@ td {
   width: 200px;
   height: 200px;
 }
-/* ul#gagal a#menu-gagal,
-ul#pending1 a#menu-pending,
-ul#berhasil a#menu-berhasil {
-  color: #fcfdfd;
-  background: #7ec8bb;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  border-radius: 10px;
-} */
 .text-verifikasi {
   font-family: 'Poppins';
   color: #000;
@@ -729,6 +739,11 @@ ul#berhasil a#menu-berhasil {
   font-size: 15px;
   line-height: 22px;
   text-align: center;
+}
+.kirim-btn:hover{
+  background-color: #fcfdfd;
+  color: #000000;
+  border: 1px solid black;
 }
 
 .ovrlay-detbatal {
@@ -1119,4 +1134,26 @@ td {
 #fform {
   font-family: 'Poppins';
   color: #00ca97;
+}
+
+/* Modal Tambah data */
+.modal-content{
+  font-family: 'Poppins';
+  font-style: normal;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.btn-save {
+  font-size: 15px;
+  color: #f5f5f5;
+  text-align: center;
+  line-height: 20px;
+  background: #00CA97;
+  border-radius: 35px;
+  border: none;
+  text-decoration: none;
+  width: 269px;
+  height: 47px;
+
+  
 }
