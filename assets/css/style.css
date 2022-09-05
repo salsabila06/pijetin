@@ -603,16 +603,6 @@ body {
   margin-bottom: 10px;
 }
 
-#pilih-durasi {
-  background: #dbfff6;
-  top: 0px;
-}
-
-#pilih-jk {
-  background: #dbfff6;
-  top: 0px;
-}
-
 .form-check {
   display: flex;
   flex-direction: column;
