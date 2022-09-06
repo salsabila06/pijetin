@@ -49,24 +49,23 @@
       </div>
     </div>
       <thead>
-        <tr style="border-top: 1px solid #000000">
+        <tr class="col-style">
           <th scope="col">Username</th>
           <th scope="col">Jasa Pijat</th>
           <th scope="col">Status</th>
-          <th scope="col"></th>
+          <th scope="col">Aksi</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr scope="row" class="isi-style">
           <td>
             <img src="/assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
             Naswa Bila Zakia</td>
           <td>Pijat tradisonal</td>
-          <td> </td>
+          <td> <i class="fa fa-circle" style="color: #f8c40d;"></i>Menunggu pembayaran</td>
           <td>
-            <button class="riwayat-btn" type="button">
-                Riwayat Pemesanan
-            </button>
+            <button class="btn-btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-dismiss="modal">Riwayat Pemesanan</button>
+
         </td>
         </tr>
     </table>
@@ -74,6 +73,92 @@
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Riwayat Transaksi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="navbar-nav float-start">
+          <li class="nav-item">
+            <a class="nav-link active ms-5" href="#"><img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">Ali Ramadhan</a>
+          </li>
+          </ul>
+          <ul class="navbar-nav float-end">
+            <li class="nav-item">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Waktu
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Bulan Ini</a></li>
+                <li><a class="dropdown-item" href="#">Bulan Lalu</a></li>
+              </ul></li>
+            </ul>
+        
+     
+    <div class="table-responsive-sm">
+      <center>
+      <table class="table1s">
+        </div>
+    
+          <tr>
+            <th>Tanggal</th>
+            <th>Pemijat</th>
+            <th>Jumlah</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>20 Jully 2022</td>
+            <td><img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
+              Naswa Bila Zakia</td>
+            <td>Rp 200.000</td>
+            <td class="text-warning">Menunggu</td>
+          </tr>
+          <tr>
+            <td>20 Jully 2022</td>
+            <td><img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
+              Naswa Bila Zakia</td>
+            <td>Rp 200.000</td>
+            <td>.</td>
+          </tr>
+          <tr>
+            <td>20 Jully 2022</td>
+            <td><img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
+              Naswa Bila Zakia</td>
+            <td>Rp 200.000</td>
+            <td>.</td>
+          </tr>
+          <tr>
+            <td>20 Jully 2022</td>
+            <td><img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
+              Naswa Bila Zakia</td>
+            <td>Rp 200.000</td>
+            <td>.</td>
+          </tr>
+          <tr>
+            <td>20 Jully 2022</td>
+            <td><img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
+              Naswa Bila Zakia</td>
+            <td>Rp 200.000</td>
+            <td>.</td>
+          </tr>
+          <tr>
+            <td>20 Jully 2022</td>
+            <td><img src="assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
+              Naswa Bila Zakia</td>
+            <td>Rp 200.000</td>
+            <td>.</td>
+          </tr>
+         
+          </table>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
  <!-- javascript -->
  <script src="/js/script.js"></script>
 

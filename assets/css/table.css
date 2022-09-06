@@ -133,13 +133,12 @@ ul a {
   color: #ffffff;
   text-align: center;
   line-height: 20px;
-  background: #00CA97;
+  background: #00ca97;
   border-radius: 10px;
   border: none;
   text-decoration: none;
   margin-left: 40px;
   height: 37px;
-  
 }
 
 /* detail pengguna */
@@ -471,7 +470,6 @@ ul#pending1 a#menu-waiting{
   color: #009d76;
 }
 
-
 .card-text-bg-dark {
   position: fixed;
   top: 0;
@@ -731,7 +729,7 @@ td {
   line-height: 22px;
   text-align: center;
 }
-.kirim-btn:hover{
+.kirim-btn:hover {
   background-color: #fcfdfd;
   color: #000000;
   border: 1px solid black;
@@ -912,9 +910,9 @@ td {
   height: 47px;
   width: 235px;
   text-align: center;
-  border-radius: 35.69696807861328px;
+  border-radius: 35.697px;
   background: #ffffff;
-  
+  border: 1px solid #00ca97;
 }
 .btn-btn-primary4:hover {
   border: 1px solid black;
@@ -924,19 +922,14 @@ td {
   height: 47px;
   width: 235px;
   color: #ffffff;
-  border-radius: 35.69696807861328px;
-  background: #00CA97;
-  border: none; 
+  border-radius: 35.697px;
+  background: #00ca97;
+  border: none;
 }
 .btn-btn-primary5:hover {
   background-color: #fcfdfd;
   color: #000000;
   border: 1px solid black;
-}
-
-.close {
-  width: 65px;
-  height: 65px;
 }
 
 /* overlay fin */
@@ -1041,7 +1034,7 @@ td {
 
 /* info */
 
-.info-dasar{
+.info-dasar {
   position: relative;
   font-family: 'Poppins';
   font-style: normal;
@@ -1053,73 +1046,83 @@ td {
   border-radius: 10px;
   margin: 1em;
   padding: 1em;
-
 }
-.info-kontak{
-position: relative;
-font-family: 'Poppins';
-font-style: normal;
-font-size: 18px;
-line-height: 20px;
-letter-spacing: 0.05em;
-color: #000000;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-margin: 10px;
-padding: 1em;
-
+.info-kontak {
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 1em;
 }
 
 /* dashboard finance */
 
-.total-pendpt{
-position: relative;
-font-family: 'Poppins';
-font-style: normal;
-height: 270px;
-letter-spacing: 0.05em;
-color: #000000;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-margin: 10px;
-padding: 1em;
-
+.total-pendpt {
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  height: 270px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 1em;
 }
 
-.menunggu-konfirmasi{
-position: relative;
-font-family: 'Poppins';
-font-style: normal;
-/* identical to box height */
+.menunggu-konfirmasi {
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  /* identical to box height */
 
-letter-spacing: 0.05em;
-color: #000000;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-margin: 10px;
-padding: 1em;
+  letter-spacing: 0.05em;
+  color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 1em;
 }
 
-.total-pendpt-perbln{
-position: relative;
-font-family: 'Poppins';
-font-style: normal;
-width: 370px;
-height: 170px;
-letter-spacing: 0.05em;
-color: #000000;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-margin: 10px;
-padding: 1em;
+.total-pendpt-perbln {
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  width: 370px;
+  height: 170px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 1em;
 }
 
-.total-pendpt-perbln #month{
-color: #696969;
+.total-pendpt-perbln #month {
+  color: #696969;
+}
+
+.penggunafinance {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+#fform {
+  font-family: 'Poppins';
+  color: #00ca97;
 }
 
 /* Modal Tambah data */
-.modal-content{
+.modal-content {
   font-family: 'Poppins';
   font-style: normal;
   letter-spacing: 0.05em;
@@ -1163,7 +1166,7 @@ color: #696969;
   text-align: center;
   line-height: 10px;
   background: #000000;
-  border-radius: 35px;
+  border-radius: 10px;
   border: none;
   text-decoration: none;
   width: 156px;
@@ -1175,9 +1178,10 @@ color: #696969;
   text-align: center;
   line-height: 10px;
   background: #0DC31F;
-  border-radius: 35px;
+  border-radius: 10px;
   border: none;
   text-decoration: none;
   width: 159px;
   height: 47px;
 }
+

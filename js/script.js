@@ -18,3 +18,12 @@ function off() {
   document.getElementById('overlay').style.display = 'none';
 }
 
+// overlay saldo
+const btn = document.getElementById('btn');
+btn.addEventListener('click', function () {
+  Swal.fire({
+    title: 'Saldo berhasil dikembalikan',
+    icon: 'success',
+    showConfirmButton: false,
+  });
+});
