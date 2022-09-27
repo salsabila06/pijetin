@@ -97,7 +97,7 @@ ul a {
 .isi-style {
   font-family: 'Poppins';
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.05em;
   color: #000000;
@@ -137,8 +137,7 @@ ul a {
   border-radius: 10px;
   border: none;
   text-decoration: none;
-  margin-left: 40px;
-  height: 37px;
+   height: 37px;
 }
 
 /* detail pengguna */
@@ -1061,53 +1060,6 @@ td {
   padding: 1em;
 }
 
-/* dashboard finance */
-
-.total-pendpt {
-  position: relative;
-  font-family: 'Poppins';
-  font-style: normal;
-  height: 270px;
-  letter-spacing: 0.05em;
-  color: #000000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 1em;
-}
-
-.menunggu-konfirmasi {
-  position: relative;
-  font-family: 'Poppins';
-  font-style: normal;
-  /* identical to box height */
-
-  letter-spacing: 0.05em;
-  color: #000000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 1em;
-}
-
-.total-pendpt-perbln {
-  position: relative;
-  font-family: 'Poppins';
-  font-style: normal;
-  width: 370px;
-  height: 170px;
-  letter-spacing: 0.05em;
-  color: #000000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 1em;
-}
-
-.total-pendpt-perbln #month {
-  color: #696969;
-}
-
 .penggunafinance {
   font-family: 'Poppins';
   font-weight: 400;
@@ -1161,19 +1113,20 @@ td {
   height: 31px;
 }
 .btn-rst {
-  font-size: 18px;
+  font-size: 15px;
   color: #f5f5f5;
   text-align: center;
   line-height: 10px;
-  background: #000000;
+  background: #FF8800;
   border-radius: 10px;
   border: none;
   text-decoration: none;
-  width: 200px;
-  height: 47px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
 }
 .btn-edit {
-  font-size: 20px;
+  font-size: 15px;
   color: #f5f5f5;
   text-align: center;
   line-height: 10px;
@@ -1181,7 +1134,86 @@ td {
   border-radius: 10px;
   border: none;
   text-decoration: none;
-  width: 200px;
-  height: 47px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
 }
 
+/* Dashboard finance */
+.content-1{
+  grid-area: content2;
+  display:grid;
+  background: linear-gradient(246.89deg, #9DFBAC -9.34%, #85FD26 105.23%);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  padding: 1em;
+  margin: 10px;
+  font-size: 15px;
+  color: white;
+  
+}
+
+.content-2{
+  grid-area: content3;
+  display:grid;
+  border-radius: 10px; 
+  background: linear-gradient(248.2deg, #FFCCC6 -12.81%, #E36252 122.46%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  padding: 1em;
+  margin: 10px;
+  font-size: 15px;
+  color: white;
+} 
+.total-pendpt {
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  height: 270px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 1em;
+}
+
+.menunggu-konfirmasi {
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  letter-spacing: 0.05em;
+  color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 1em;
+}
+
+/* SA (data) */
+ div #edit{
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin:1px;
+padding: 10px;
+  
+ }
+ div #reset{
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin:1px;
+  margin-top: 10px;
+  padding: 10px;
+  
+ }
