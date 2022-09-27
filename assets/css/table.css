@@ -188,6 +188,12 @@ ul a {
   padding: 7px;
   justify-content: center;
 }
+.round1 {
+  width: 130px;
+  height: 150px;
+  padding: 7px;
+  justify-content: center;
+}
 .card-overlay {
   position: fixed;
   top: 0;
@@ -549,6 +555,7 @@ td {
 }
 .status-btn2 {
   display: flex;
+
   flex-direction: row;
   align-items: flex-start;
 
