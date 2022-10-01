@@ -1138,6 +1138,19 @@ td {
   width: 100%;
   height: 100%;
 }
+.btn-pulih {
+  font-size: 16px;
+  color: #f5f5f5;
+  text-align: center;
+  line-height: 10px;
+  background: #04C194;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
 
 /* Dashboard finance */
 .content-1{
@@ -1217,3 +1230,33 @@ padding: 10px;
   padding: 10px;
   
  }
+
+ /* Dashboard SA */
+ .content1{
+  grid-area: content1;
+  display:grid;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px; 
+   height: 187px;
+  border-bottom: 3px solid #348727; 
+}
+
+.content2{
+  grid-area: content2;
+  display:grid;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 187px;
+
+  border-bottom: 3px solid #3191EA;
+}
+
+.content3 {
+  grid-area: content3;
+  display:grid;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 1em; 
+  height: 187px;
+  border-bottom: 3px solid #EE6969;
+}
