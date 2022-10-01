@@ -9,8 +9,7 @@ body {
     grid-template-rows: auto;
     grid-template-areas: 
     "content1 content2 content3"
-    "content4 content4 content4";
-    
+    "content4 content4 content4";  
 }
 
 .content1{
@@ -23,8 +22,6 @@ body {
     padding: 1em;
     border-bottom: 3px solid #348727; 
 }
-
-
 
 .content2{
     grid-area: content2;
@@ -67,7 +64,6 @@ span {
 }
 
 @media only screen and (max-width: 500px) {
-    
     body {
         grid-template-areas: 
         "content1 content2 content3"
@@ -76,5 +72,4 @@ span {
        grid-template-columns: auto;
         grid-template-rows: auto;
     }
-
 }
