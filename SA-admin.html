@@ -24,7 +24,9 @@
 
     <div class="col py-2">
       <div class="float-start">
-        <button  type="button"  class="btn-tambah" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-user-plus "></i>Tambah admin baru</button>
+        <button onclick="on()" class="btn-tambah" type="button">
+          <i class="fa fa-user-plus "></i>Tambah admin baru
+      </button>
       </div>
      <div class="float-end">
         <form class="d-flex" role="search">
@@ -74,13 +76,9 @@
         <td>atta@gmail.com</td>
         <td>081226789086</td>
         <td> <i class="fa fa-circle" style="color: #05FF00;"></i>Online</td>
-<<<<<<< HEAD
         <td>
           <button class="pengguna-btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Admin</button>
           </td>
-=======
-        <td><button type="button" data-bs-toggle="modal" href="#Modal_a" class="pengguna-btn">Detail Admin</button></td>
->>>>>>> 1190c52d03e5b65abb9774edf7f28ab1763218dd
       </tr>
     </tbody> 
     
@@ -92,7 +90,9 @@
         <td>cantik@gmail.com</td>
         <td>083457890987</td>
         <td> <i class="fa fa-circle" style="color: #05FF00;"></i>Online</td>
-        <td><button onclick="on()" class="pengguna-btn">Detail Admin</button></td>
+        <td>
+          <button class="pengguna-btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Admin</button>
+          </td>
       </tr>
     </tbody>
 
@@ -104,7 +104,9 @@
         <td>bib@gmail.com</td>
         <td>087356789087</td>
         <td> <i class="fa fa-circle" style="color: #05FF00;"></i>Online</td>
-        <td><button onclick="on()" class="pengguna-btn">Detail Admin</button></td>
+        <td>
+          <button class="pengguna-btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Admin</button>
+          </td>
       </tr>
     </tbody>
     </table>
@@ -127,6 +129,132 @@
     </div>
   </div>
 </div>
+</div>
+
+<div id="overlay" onclick="off()">
+  <div class="card-overlay">
+    <center>
+      <div class="cardcontainer1">
+        <h4 class="title-profil">Tambah Data</h4>
+        <div class="modal-body">
+          <form>
+            <div class="row  align-items-center">
+              <div class="col-3">
+                <i class="fa fa-user-circle" aria-hidden="true" style="color:#7C7C7C; font-size: 5em; "></i>
+              </div>
+              <div class="col-1">
+                <label class="col-form-label">:</label>
+              </div>
+              <div class="col-8">
+                <input class="profile" type="file" value="upload profile"/>
+              </div>
+            <div class="row  align-items-center">
+              <div class="col-3">
+                <label for="inputNama" class="col-form-label">Nama</label>
+              </div>
+              <div class="col-1">
+                <label class="col-form-label">:</label>
+              </div>
+              <div class="col-8">
+                <input id="inputNama" class="form-control" placeholder="Nama" >
+              </div>
+            </div>
+            <div class="row  align-items-center">
+              <div class="col-3">
+                <label for="inputUsername" class="col-form-label">Username</label>
+              </div>
+              <div class="col-1">
+                <label class="col-form-label">:</label>
+              </div>
+              <div class="col-8">
+                <input id="inputUsername" class="form-control" placeholder="Username" >
+              </div>
+            </div>
+            <div class="row  align-items-center">
+              <div class="col-3">
+                <label for="inputPassword" class="col-form-label">Password</label>
+              </div>
+              <div class="col-1">
+                <label class="col-form-label">:</label>
+              </div>
+              <div class="col-8">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password">
+              </div>
+            </div>
+            <div class="row  align-items-center">
+              <div class="col-3">
+                <label for="inputEmail" class="col-form-label">Email</label>
+              </div>
+              <div class="col-1">
+                <label class="col-form-label">:</label>
+              </div>
+              <div class="col-8">
+                <input  id="inputEmail" class="form-control" placeholder="Email" >
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-3">
+                <label for="inputTtl" class="col-form-label">Tanggal Lahir</label>
+              </div>
+              <div class="col-1">
+                <label class="col-form-label">:</label>
+              </div>
+              <div class="col-8">
+                <input type="date" id="inputTtl" class="form-control" >
+              </div>
+            </div>
+            <div class="row  align-items-center">
+              <div class="col-3">
+                <label for="inputNoTlpn" class="col-form-label">No Telepon</label>
+              </div>
+              <div class="col-1">
+                <label class="col-form-label">:</label>
+              </div>
+              <div class="col-8">
+                <input id="inputNoTlpn" class="form-control" placeholder="No Telepon" >
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-3">
+                <label for="inputAlamat" class="col-form-label">Alamat</label>
+              </div>
+              <div class="col-1">
+                <label class="col-form-label">:</label>
+              </div>
+              <div class="col-8">
+                <input id="inputAlamat" class="form-control" placeholder="Alamat" >
+              </div>
+            </div>
+            <div class="row  align-items-center">
+              <div class="col-3">
+                <label for="inputAlamat" class="col-form-label">Posisi</label>
+              </div>
+              <div class="col-1">
+                <label class="col-form-label">:</label>
+              </div>
+              <div class="col-8 ">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Admin</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Finance</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn-save">Simpan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+    </center>
+  </div>
 </div>
  
 
@@ -293,84 +421,43 @@
              <button  type="button"  class="btn-hapusakun">Hapus Akun</i></button>
             </div>
         </div>
-        <form>
-          <div class="row g-3 align-items-center">
-            <div class="col-3">
-              <label for="inputNama" class="col-form-label">Nama</label>
-            </div>
-            <div class="col-1">
-              <label class="col-form-label">:</label>
-            </div>
-            <div class="col-8">
-              <input id="inputNama" class="form-control" placeholder="Al.Ramadhaan" >
-            </div>
-          </div>
-          <div class="row g-3 align-items-center">
-            <div class="col-3">
-              <label for="inputEmail" class="col-form-label">Email</label>
-            </div>
-            <div class="col-1">
-              <label class="col-form-label">:</label>
-            </div>
-            <div class="col-8">
-              <input  id="inputEmail" class="form-control" placeholder="alramdhan@gmail.com" >
-            </div>
-          </div>
-          <div class="row g-3 align-items-center">
-            <div class="col-3">
-              <label for="inputTgl" class="col-form-label">Tanggal dibuat</label>
-            </div>
-            <div class="col-1">
-              <label class="col-form-label">:</label>
-            </div>
-            <div class="col-8">
-              <input type="date" id="inputTgl" class="form-control">
-            </div>
-          </div>
-          <div class="row g-3 align-items-center">
-            <div class="col-3">
-              <label for="inputNoTlpn" class="col-form-label">No Tel</label>
-            </div>
-            <div class="col-1">
-              <label class="col-form-label">:</label>
-            </div>
-            <div class="col-8">
-              <input id="inputNoTlpn" class="form-control" placeholder="081344215841" >
-            </div>
-          </div>
-          <div class="row g-3 align-items-center">
-            <div class="col-3">
-              <label for="inputAlamat" class="col-form-label">Alamat</label>
-            </div>
-            <div class="col-1">
-              <label class="col-form-label">:</label>
-            </div>
-            <div class="col-8">
-              <input id="inputAlamat" class="form-control" placeholder="Kabupaten Sokaraja" >
-            </div>
-          </div>
-          <div class="row g-3 align-items-center">
-            <div class="col-3">
-              <label for="inputAlamat" class="col-form-label">Posisi</label>
-            </div>
-            <div class="col-1">
-              <label class="col-form-label">:</label>
-            </div>
-            <div class="col-8 ">
-              <label for="inputAdmin" class="col-form-label">Admin</label>
-            </div>
-          </div>
-        </form>
-      </div>
+        <table class="">
+          <tr>
+            <td>Username</td>
+            <td>:</td>
+            <td>Al.Ramadhaan</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>alramdhan@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Tanggal dibuat</td>
+            <td>:</td>
+            <td>26/09/2020</td>
+          </tr>
+          <tr>
+            <td>Nomer Telepon</td>
+            <td>:</td>
+            <td>081234567890</td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td>Kabupaten Sokaraja</td>
+          </tr>
+          <tr>
+            <td>Posisi</td>
+            <td>:</td>
+            <td>Finance</td>
+          </tr>
+        </table>
+      
       <div class="modal-footer justify-content-center">
-<<<<<<< HEAD
        <button class="btn-rst" id="" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal" data-bs-dismiss="modal">Reset Password</button>
        <button class="btn-edit" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Edit Data</button>
-       
-=======
-       <button type="button" class="btn-rst" data-bs-toggle="modal" id="" data-bs-target="#exampleModalToggle2" >Reset Password</button>
-        <button type="button" class="btn-edit">Edit Data</button> 
->>>>>>> 1190c52d03e5b65abb9774edf7f28ab1763218dd
+       </div>
       </div>
     </div>
   </div>
