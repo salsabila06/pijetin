@@ -37,6 +37,16 @@ h6 {
   transition: all ease-in-out 0.3s;
 }
 
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar .nav-brand {
+  align-items: flex-start;
+  padding: 10px 1256px 10px 80px;
+  gap: 10px;
+}
+
 .bg-transparent {
   transition: all ease-in 0.1s;
 }
@@ -265,4 +275,54 @@ button:hover {
     display: block;
     padding-bottom: 5px;
   }
+}
+
+.pesen {
+  width: 45%;
+  height: auto;
+  align-items: center;
+}
+
+.card {
+  width: 412px;
+  height: 324px;
+  border: none;
+  cursor: pointer;
+}
+
+/* .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.wrapper > div {
+  border: 1px solid #7c7c7c;
+  margin: 0.1em;
+  padding: 0.3em;
+  border-radius: 10px;
+  flex: 1;
+} */
+/* .col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+} */
+
+.pilih-voucher input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(180, 237, 222, 0.5);
+  border: 2px dashed #000000;
+  border-radius: 10px;
 }
