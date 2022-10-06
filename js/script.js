@@ -8,7 +8,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// overlay
+// general overlay
 
 function on() {
   document.getElementById('overlay').style.display = 'block';
