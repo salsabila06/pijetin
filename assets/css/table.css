@@ -1,7 +1,7 @@
 body {
   font-family: 'Poppins';
   font-style: normal;
-  padding: 50px;
+  padding: 1em;
 }
 .search {
   background-color: #7ec8bb;
@@ -1278,4 +1278,64 @@ padding: 10px;
   padding: 1em; 
   height: 187px;
   border-bottom: 3px solid #EE6969;
+}
+
+/* MITRA */
+
+/* login */
+.ket-log{
+  font-family: 'Poppins';
+  font-style: normal;
+  
+}
+.ket-dtr{
+  font-size: 12px;
+   text-align: center; 
+  
+}
+.btn-msk {
+  font-size: 17px;
+  color: #000000;
+  text-align: center;
+  line-height: 10px;
+  background: white;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  text-decoration: none;
+  border: 1px solid #000000;
+  margin: 10px;
+  padding: 10px;
+  
+
+}
+.btn-dtr {
+  font-size: 17px;
+  color: #f5f5f5;
+   text-align: center;
+  line-height: 10px;
+  background: #3D72E8;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  
+ 
+
+}
+.btn-lanjut {
+  font-size: 17px;
+  color: #f5f5f5;
+  text-align: center;
+  line-height: 10px;
+  background: #3D72E8;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  border: none;
+  text-decoration: none;
+  padding: 10px;
+  position: absolute;
 }
