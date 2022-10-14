@@ -398,8 +398,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 30px 10px;
+  padding: 30px 50px 10px;
   gap: 30px;
+  width: 600px;
+  height: 200px;
   border: none;
   background: #f1f9ff;
   border-radius: 10px;
@@ -415,8 +417,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 30px 10px;
+  padding: 30px 33px 10px;
   gap: 30px;
+  width: 600px;
+  height: 200px;
   border: none;
   background: #f7dfff;
   border-radius: 10px;
