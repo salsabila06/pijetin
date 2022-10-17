@@ -1364,8 +1364,8 @@ padding: 10px;
   text-decoration: none;
   padding: 10px;
   border-radius: 10px;
-
   background: #3D72E8;
+  position: relative ;
   width: 100%;
  
 }
@@ -1375,8 +1375,14 @@ padding: 10px;
   display: flex;
   background: #ffffff;
   font-family: 'Poppins';
-  font-style: normal;
-  color: #424141;
-  border-bottom-left-radius: 10px;
-  border-bottom: #424141;
+  text-decoration: none;
+
+}
+.title-2 {
+font-family: 'Poppins';
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+color: #000000;
+border-bottom: 1px solid #000000;
 }
