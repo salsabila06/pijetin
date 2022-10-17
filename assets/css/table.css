@@ -1334,6 +1334,43 @@ padding: 10px;
   border: none;
   text-decoration: none;
   padding: 10px;
+<<<<<<< HEAD
+  position: absolute;
+}
+
+/* Pulihkan Akun*/
+
+.alert {
+  width: 100px;
+  height: 90px;
+  left: 200px;
+  position: fixed;
+}
+.btn-btn-primarys {
+  height: 47px;
+  width: 200px;
+  text-align: center;
+  border-radius: 35.697px;
+  background: #ffffff;
+  border: 1px solid #00ca97;
+}
+.btn-btn-primarys:hover {
+  border: 1px solid black;
+  color: #000000;
+}
+.btn-btn-primarys1 {
+  height: 47px;
+  width: 200px;
+  color: #ffffff;
+  border-radius: 35.697px;
+  background: #00ca97;
+  border: none;
+}
+.btn-btn-primarys1:hover {
+  background-color: #fcfdfd;
+  color: #000000;
+  border: 1px solid black;
+=======
   position: relative ;
   width: 100%;
 }
@@ -1354,4 +1391,5 @@ letter-spacing: 0.05em;
 color: #000000;
 border-bottom: 1px solid #000000;
 
+>>>>>>> f632a3468d5447919cafd94b60aa4d439d210d97
 }
