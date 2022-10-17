@@ -1334,7 +1334,6 @@ padding: 10px;
   border: none;
   text-decoration: none;
   padding: 10px;
-<<<<<<< HEAD
   position: absolute;
 }
 
@@ -1370,26 +1369,4 @@ padding: 10px;
   background-color: #fcfdfd;
   color: #000000;
   border: 1px solid black;
-=======
-  position: relative ;
-  width: 100%;
-}
-.nav-mitra{
-  color: #000;
-  font-family: 'Poppins';
-  font-style:italic;
-  text-decoration: none;
-
-}
-.title-2 {
-  
-font-family: 'Poppins';
-
-font-size: 20px;
-line-height: 36px;
-letter-spacing: 0.05em;
-color: #000000;
-border-bottom: 1px solid #000000;
-
->>>>>>> f632a3468d5447919cafd94b60aa4d439d210d97
 }
