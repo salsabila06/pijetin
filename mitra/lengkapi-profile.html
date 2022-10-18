@@ -35,41 +35,76 @@
       </div> 
 
       <div id="body">
-        <p>Mendaftar sebagai:</p>
+        <p class="ket-log" >Mendaftar sebagai:</p>
         <div class="row justify-content-start mb-2">
-          <div class="col-sm-5">
+          <div class="col-sm-5 ket-log">
             <img src="/assets/img/foto-user.svg" alt="Product 1" class="img-circle img-size-32 mr-2">
             Mitra Pemijat
           </div>
+        
         </div>
-        <div class="alert alert-danger" role="alert">
+        <div class="alert alert-danger alert-dismissible fade show " role="alert">
           Harap isi dengan data calon mitra, bukan data diri orang lain
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+        
         <form>
-          <div class="form-list-row">
-            <label  class="form-label">Nama Lengkap</label>
-            <input class="form-input" type="text" >
-          </div>
-          <div class="form-list-row">
-            <label  class="form-label">Nama Lengkap</label>
-            <input class="form-input" type="text" >
-          </div>
-          </form> 
-          <!-- <form>
-            <ul class="form-list">
-              <li class="form-list__row">
-                <label>Name</label>
-                <input type="text" name="" required="" />
-              </li>
-              <li class="form-list__row">
-                <label>Card Number</label>
-                <div id="input--cc" class="creditcard-icon">
-                  <input type="text" name="cc_number" required="" />
+          <div class="row  align-items-start">
+            <div class="col-md-6 col-lg-6">
+              <label class="form-label">Nama lengkap</label>
+              <input type="text" class="form-list-row"  placeholder="Cth : Jamaludin" >
+              <p class="text-danger">Harap isi nama lengkap sesuai dengan KTP</p>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <label class="form-label">Nomer HP aktif</label>
+              <div class="row g-3 align-items-start ">
+                <div class="col-2  col-lg-1 text-center">
+                  <img src="/assets/img/Frame 189.svg" alt="+62" class="img-circle img-size-32 mr-2">
                 </div>
-              </li>
-            </ul>
-          </form> -->
-          <div class="row"> 
+                <div class="col-10  col-lg-11" id="">
+                  <input type="tel" id="" class="form-list-row" placeholder="Cth : 89634567678" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row  align-items-start">
+            <div class="col-md-6 col-lg-6">
+              <label class="form-label">Nomer HP darurat</label>
+              <div class="row g-3 align-items-start ">
+                <div class="col-2  col-lg-1 text-center">
+                  <img src="/assets/img/Frame 189.svg" alt="+62" class="img-circle img-size-32 mr-2">
+                </div>
+                <div class="col-10  col-lg-11" id="">
+                  <input type="tel" id="" class="form-list-row" placeholder="Cth : 89634560000" >
+                </div>
+              </div>
+              <p class="text-danger">Untuk hubungi anda jika No. HP utama tidak aktif</p>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <label class="form-label">Alamat email</label>
+              <input type="email" class="form-list-row"  placeholder="Cth : awikwok@gmail.com" >
+       
+            </div>
+          </div>
+          <div class="row  align-items-start">
+            <div class="col-md-6 col-lg-6">
+              <label class="form-label">Keahlian Pijat</label>
+              <input type="text" class="form-list-row"  placeholder="Cth : Pijat Prenatal" >
+       
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <label class="form-label">Bandung</label>
+              <select class="form-select" >
+                <option selected>Kota</option>
+                <option value="1">Jogja</option>
+                <option value="2">Jakarta</option>
+                <option value="3">Bali</option>
+              </select>
+       
+            </div>
+          </div>
+        </form> 
+          <div class="row  col-md-12 col-lg-12 mt-3"> 
             <a class="btn-dtr" href="unggah-dok.html">Lanjut</a>  
           </div>
       </div>
