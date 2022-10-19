@@ -1399,4 +1399,26 @@ padding: 10px;
   background-color: #fcfdfd;
   color: #000000;
   border: 1px solid black;
+  border-radius: 10px;
+  background: #3D72E8;
+  position: relative ;
+  width: 100%;
+ 
+}
+
+
+.form-input{
+  display: flex;
+  background: #ffffff;
+  font-family: 'Poppins';
+  text-decoration: none;
+
+}
+.title-2 {
+font-family: 'Poppins';
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+color: #000000;
+border-bottom: 1px solid #000000;
 }
