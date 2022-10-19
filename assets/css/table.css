@@ -1299,7 +1299,7 @@ padding: 10px;
     padding-bottom: 60px;   /* sesuaikan dengan tinggi footer */
   }
   #footer {
-    position:absolute;
+    position:static;
     bottom:5px;
     width:80%;
     /* tinggi dari footer */
@@ -1401,9 +1401,7 @@ padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
   background: #3D72E8;
-  position: relative ;
   width: 100%;
- 
 }
 
 
@@ -1421,4 +1419,30 @@ line-height: 36px;
 letter-spacing: 0.05em;
 color: #000000;
 border-bottom: 1px solid #000000;
+}
+.form-list-row{
+  position: relative;
+  width: 100%;
+  border-radius: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  background: #ffffff;
+  color: #A6A6A6;
+  border-width: 0ch;
+  border-bottom: 2px solid #A6A6A6;
+}
+.form-label{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 17px;
+  line-height: 23px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.form-select
+{
+  font-family: 'Poppins';
+  font-style: normal;
+ 
 }
