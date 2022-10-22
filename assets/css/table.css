@@ -1353,18 +1353,20 @@ padding: 10px;
   padding: 10px;
   
 }
-.btn-lanjut {
+.btn-lgn {
+  font-size: 17px;
+  color: #f5f5f5;
+   text-align: center;
+  line-height: 10px;
+  background: #3D72E8;
+  border-radius: 10px;
   font-family: 'Poppins';
   font-style: normal;
-  font-size: 20px;
-  line-height: 22px;
-  color: #f5f5f5;
-  text-align: center;
-  line-height: 10px;
-  border: none;
   text-decoration: none;
   padding: 10px;
-  position: absolute;
+  width: 100%;
+  margin: 10px;
+  
 }
 
 /* Pulihkan Akun*/
@@ -1446,3 +1448,5 @@ border-bottom: 1px solid #000000;
   font-style: normal;
  
 }
+
+
