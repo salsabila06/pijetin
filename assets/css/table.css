@@ -1446,3 +1446,13 @@ border-bottom: 1px solid #000000;
   font-style: normal;
  
 }
+.fa-camera {
+  font-size: 10px;
+  border: 1px;
+  padding: 25px;
+  color: #bdbdbd;
+}
+.choose-file label {
+  border: 2px dashed #A6A6A6;
+  border-radius: 6px;
+}
