@@ -69,6 +69,43 @@ img {
   height: auto;
 }
 
+#sal p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+
+strong {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+}
+
+.tbl-1{
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  box-sizing: border-box;
+  border-top: 1px solid #EEE9E9;
+  margin: 10px 0;
+}
+
+.tbl-isi{
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+}
+
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .sections {
   padding: 4.5rem 0 2rem;
