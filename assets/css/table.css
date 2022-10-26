@@ -202,7 +202,7 @@ ul a {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px;
 }
 
 /* review */
@@ -1281,16 +1281,47 @@ padding: 10px;
 }
 
 /* MITRA */
-
+#header {
+  
+  font-family: 'Poppins';
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  border-bottom: 2px solid #000000;
+  
+  }
+  #body {
+    padding:10px;
+    /* background:rgb(226, 24, 216); */
+    padding-bottom: 60px;   /* sesuaikan dengan tinggi footer */
+  }
+  #footer {
+    position:static;
+    bottom:5px;
+    width:80%;
+    /* tinggi dari footer */
+    
+  }
+  .nav-mitra{
+    color: #000;
+    font-family: 'Poppins';
+    font-style:italic;
+    text-decoration: none;
+  
+  }
 /* login */
 .ket-log{
   font-family: 'Poppins';
   font-style: normal;
   
+  
 }
 .ket-dtr{
   font-size: 12px;
-   text-align: center; 
+  text-align: center; 
   
 }
 .btn-msk {
@@ -1306,7 +1337,6 @@ padding: 10px;
   border: 1px solid #000000;
   margin: 10px;
   padding: 10px;
-  
 
 }
 .btn-dtr {
@@ -1322,20 +1352,111 @@ padding: 10px;
   margin: 10px;
   padding: 10px;
   
- 
-
 }
-.btn-lanjut {
+.btn-lgn {
   font-size: 17px;
   color: #f5f5f5;
-  text-align: center;
+   text-align: center;
   line-height: 10px;
   background: #3D72E8;
   border-radius: 10px;
   font-family: 'Poppins';
   font-style: normal;
-  border: none;
   text-decoration: none;
   padding: 10px;
-  position: absolute;
+  width: 100%;
+  margin: 10px;
+  
 }
+
+/* Pulihkan Akun*/
+
+.alert1 {
+  width: 100px;
+  height: 90px;
+  left: 200px;
+  position: fixed;
+}
+.btn-btn-primarys {
+  height: 47px;
+  width: 200px;
+  text-align: center;
+  border-radius: 35.697px;
+  background: #ffffff;
+  border: 1px solid #00ca97;
+}
+.btn-btn-primarys:hover {
+  border: 1px solid black;
+  color: #000000;
+}
+.btn-btn-primarys1 {
+  height: 47px;
+  width: 200px;
+  color: #ffffff;
+  border-radius: 35.697px;
+  background: #00ca97;
+  border: none;
+}
+.btn-btn-primarys1:hover {
+  background-color: #fcfdfd;
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #3D72E8;
+  width: 100%;
+}
+
+
+.form-input{
+  display: flex;
+  background: #ffffff;
+  font-family: 'Poppins';
+  text-decoration: none;
+
+}
+.title-2 {
+font-family: 'Poppins';
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+color: #000000;
+border-bottom: 1px solid #000000;
+}
+.form-list-row{
+  position: relative;
+  width: 100%;
+  border-radius: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  background: #ffffff;
+  color: #A6A6A6;
+  border-width: 0ch;
+  border-bottom: 2px solid #A6A6A6;
+}
+.form-label{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 17px;
+  line-height: 23px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.form-select
+{
+  font-family: 'Poppins';
+  font-style: normal;
+ 
+}
+
+.fa-camera {
+  font-size: 10px;
+  border: 1px;
+  padding: 25px;
+  color: #bdbdbd;
+}
+.choose-file label {
+  border: 2px dashed #A6A6A6;
+  border-radius: 6px;
+}
+

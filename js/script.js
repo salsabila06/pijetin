@@ -28,6 +28,9 @@ btn.addEventListener('click', function () {
   });
 });
 
+$('.dropdown-toggle').dropdown()
+
+
 // const btn = document.getElementById('btn');
 //   btn.addEventListener('click', function(){
 //   swal({
@@ -43,4 +46,6 @@ btn.addEventListener('click', function () {
 //   swal("Deleted!", "Your imaginary file has been deleted.", "success");
 //   });  
 //     })
+
+
 
