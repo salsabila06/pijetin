@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== BOOTSTRAP ===============-->
-        <script type="text/javascript" src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
+         <!--=============== BOOTSTRAP ===============-->
+         <script type="text/javascript" src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
@@ -19,16 +19,15 @@
         <title>Pijetin</title>
     </head>
     <body>
-         <!--=============== HEADER ===============-->
-         
-         <header class="headers" id="header">
+        <!--=============== HEADER ===============-->
+        <header class="headers" id="header">
             <nav class="navbar containers">
                 <a href="landing-page.html" class="nav__logo"><img src="/assets/img/Pijetin 2.svg" alt="" srcset=""></a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="home.html" class="nav__link active-link">
+                            <a href="home.html" class="nav__link ">
                                 <i class='bx bx-home-alt nav__icon'></i>
                                 <span class="nav__name">Home</span>
                             </a>
@@ -51,7 +50,7 @@
                         
 
                         <li class="nav__item">
-                            <a href="akun.html" class="nav__link">
+                            <a href="akun.html" class="nav__link active-link">
                                 <i class='bx bx-user nav__icon'></i>
                                 <span class="nav__name">Akun</span>
                             </a>
@@ -64,38 +63,47 @@
         </header>
 
         <main>
-            <!--=============== HOME ===============-->
-            <section class="containers sections section__height" id="home">
-                <h2 class="section__title">Home</h2>
-                <div class="row col-10">
-                    <div class="alert alert-light d-flex align-items-center" role="alert">
-                        <i class='bx bx-info-circle' ></i>                      
-                       Anda bisa melihat semua pendapatan bersih dan pesanan yang anda dapatkan disini            
-                      </div>
-                    </div> 
-                  </div>
-                  <div class="row det-pendapatan">
-                    <div class="col-9 col-sm-4">Rp 30.000</div>
-                    <div class="col-2 col-sm-2">Tunai</div>
-                
-                    <!-- Force next columns to break to new line -->
-                    <div class="w-100"></div>
-                
-                    <div class="col-9 col-sm-4">10.00 - 10.20 2km</div>
-                    <div class="col-2 col-sm-2">Selesai</div>
-                  </div>
-                  <div class="row mt-3">
-                    <!-- Inline level -->
-                    <span class="d-inline-block text-truncate" style="min-width: 300px;">
-                        <i class='bx bxs-circle'style="color:#4BECD4;"></i> Gejawan Wetan, Balecatur, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55295
-                    </span>
-                    <span class="d-inline-block text-truncate" style="min-width: 300px;">
-                        <i class='bx bxs-circle'style="color: #3191EA;"></i> Gejawan Wetan, Balecatur, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55295
-                    </span>
-                  </div>
-            </section>
-        </main>
+            
+            <!--=============== AKUN ===============-->
+            <section class="containers sections section__height" id="akun">
+                <h2 class="section__title">Pewaktu</h2>
+                <div class="alert alert-danger alert-dismissible fade show " role="alert">
+                     Harap mengaktifkan pewaktu sebelum dan sesudah melakukan pijat
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body pewaktu">
+                        <div id="time">
+                            <span class="digit" id="hr">
+                              00</span>
+                            <span class="txt">Hr</span>
+                            <span class="digit" id="min">
+                              00</span>
+                            <span class="txt">Min</span>
+                            <span class="digit" id="sec">
+                              00</span>
+                            <span class="txt">Sec</span>
+                            <span class="digit" id="count">
+                              00</span>
+                        </div>
+                        <div id="buttons">
+                            <button class="btn" id="start">
+                              Start</button>
+                            <button class="btn" id="stop">
+                              Stop</button>
+                            <button class="btn" id="reset">
+                              Reset</button>
+                        </div>
+                    </div>
+                </div>
 
-         <!--=============== MAIN JS ===============-->
-         <script src="/js/main.js"></script>
+            </section>
+
+           
+        </main>
+        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="/js/main.js"></script>
     </body>
+</html>
