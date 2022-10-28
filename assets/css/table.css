@@ -1460,3 +1460,28 @@ border-bottom: 1px solid #000000;
   border-radius: 6px;
 }
 
+ /* TIMER */
+ /* article {
+  width: 300px;
+  text-align: center;
+  background-color: #68b04d;
+  border-radius: 10px;
+  margin: 50px auto 20px;
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px #ccc;
+}
+
+article h3 {
+  padding: 10px;
+  color: #fff;
+}
+article .count {
+  padding: 5px;
+}
+article #timer{
+  padding: 5px;
+  color: rgb(243, 32, 74);
+  background-color: aliceblue;
+  border-radius: 2px;
+} */
