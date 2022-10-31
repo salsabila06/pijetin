@@ -328,6 +328,51 @@ strong {
 height: 100px;
 border-radius: 50%;
 }
+
+
+.progress{
+  margin-top: 8px;
+  margin-left: 190px;
+  margin-right: 5px;
+  
+}
+.profile-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color:#3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color: #979797;
+  font-size: 0.8rem;
+}
+.reviews{
+  color: #f9d71c;
+}
+.testimonial-box{
+  width:auto;
+  box-shadow: 2px 2px 10px rgb(223, 222, 222);
+  background: color #f5f5f5;;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+=======
 .det-pendapatan{
   border-top:  1px solid #777;
   border-bottom: 1px solid #777;
@@ -559,3 +604,4 @@ div #time{
 #reset {
   background-color: #0e85fc;
 }
+
