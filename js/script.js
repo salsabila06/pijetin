@@ -1,3 +1,29 @@
+Swal.bindClickHandler('data-swal-template')
+document.querySelector(".save").addEventListener('click', function(){
+  Swal.fire({
+    
+    title: 'Simpan data',
+    text: 'Yakin ingin menyimpan data baru?',
+    icon: 'info',
+    iconColor: 'rad',
+    showDenyButton: true,
+    showCloseButton: true,
+    confirmButtonText: 'Iya',
+    confirmButtonColor: "#00CA97",
+    denyButtonText: `Tidak`,
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      Swal.fire('Data berhasil disimpan!', '', 'success')
+    } else if (result.isDenied) {
+      Swal.fire('Data tidak disimpan', '', 'warning')
+    }
+  })
+});
+
+Swal.bindClickHandler('data-swal-template')
+
+
 const navbar = document.getElementsByTagName('nav')[0];
 window.addEventListener('scroll', function () {
   console.log(this.window.scrollY);
@@ -31,21 +57,13 @@ btn.addEventListener('click', function () {
 $('.dropdown-toggle').dropdown()
 
 
-// const btn = document.getElementById('btn');
-//   btn.addEventListener('click', function(){
-//   swal({
-//   title: "Are you sure?",
-//   text: "Your will not be able to recover this imaginary file!",
-//   type: "warning",
-//   showCancelButton: true,
-//   confirmButtonClass: "btn-danger",
-//   confirmButtonText: "Yes, delete it!",
-//   closeOnConfirm: false
-//   },
-//   function(){
-//   swal("Deleted!", "Your imaginary file has been deleted.", "success");
-//   });  
-//     })
+
+
+
+
+
+
+
 
 
 
