@@ -6,17 +6,21 @@
     <script type="text/javascript" src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    
+
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet" />
-
+    
+    <!--sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.5.11/dist/cropper.js"></script>
     <!--my style -->
+    
     <link rel="stylesheet" href="/assets/css/table.css">
     <link rel="stylesheet" href="/assets/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
+    
     <title>pijetin</title>
 </head>
  
@@ -241,11 +245,77 @@
         </form>
       </div>
       <div class="modal-footer justify-content-center">
-        <button type="button" class="btn-save">Simpan</button>
+        
+        <button class="save" id="btn-save">Simpan</button> 
       </div>
     </div>
   </div>
 </div>
+<!--- Sweet Alert Edit -->
+<template id="edit">
+  <swal-title>
+    Simpan Perubahan
+  </swal-title>
+  <swal-image src="/assets/img/Info-triangle.svg" width="..." height="..." alt="warning" />
+  <swal-html>Yakin ingin menyimpan perubahan data admin?</swal-html>
+  <swal-button type="confirm" color="#00CA97">
+    Iya
+  </swal-button>
+  <swal-button type="cancel">
+    Tidak
+  </swal-button>
+  <swal-param name="allowEscapeKey" value="false" />
+  <swal-param
+    name="customClass"
+    value='{ "popup": "my-popup" }' />
+  <swal-function-param
+    name="didOpen"
+    value="popup => console.log(popup)" />
+</template>
+
+<!--- Sweet Alert Reset -->
+<template id="reset">
+  <swal-title>
+    Reset Password
+  </swal-title>
+  <swal-image src="/assets/img/info-2.svg" width="..." height="..." alt="warning" />
+  <swal-html>Yakin ingin mengganti password admin?</swal-html>
+  <swal-button type="confirm" color="#00CA97">
+    Iya
+  </swal-button>
+  <swal-button type="cancel">
+    Tidak
+  </swal-button>
+  <swal-param name="allowEscapeKey" value="false" />
+  <swal-param
+    name="customClass"
+    value='{ "popup": "my-popup" }' />
+  <swal-function-param
+    name="didOpen"
+    value="popup => console.log(popup)" />
+</template>
+
+<!--- Sweet Alert Hapus -->
+<template id="hapus">
+  <swal-title>
+    Hapus Akun
+  </swal-title>
+  <swal-image src="/assets/img/info-3.svg" width="..." height="..." alt="warning" />
+  <swal-html>Yakin ingin menghapus akun admin?</swal-html>
+  <swal-button type="confirm" color="#00CA97">
+    Iya
+  </swal-button>
+  <swal-button type="cancel">
+    Tidak
+  </swal-button>
+  <swal-param name="allowEscapeKey" value="false" />
+  <swal-param
+    name="customClass"
+    value='{ "popup": "my-popup" }' />
+  <swal-function-param
+    name="didOpen"
+    value="popup => console.log(popup)" />
+</template>
 
 <!--- Modal detail data -->
 <div class="modal fade" id="modalDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -256,7 +326,19 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        c
+        <div class="row justify-content-start mb-2">
+          <div class="col-md-4 col-lg-4 col-xl-4">
+            <img class="round" src="/assets/img/foto-user.svg" alt="user" />
+          </div>
+          
+          <div class="col-md-6 col-lg-6 col-xl-6">
+            <h5>Ali Ramadhaan<i class="fa fa-pencil" style="color: #3c79e9;"></i></h5>
+            <h6 class="text-muted">Admin</h6>
+            <button class='btn-hapusakun ' data-swal-template='#hapus'>
+              Hapus akun
+            </button>
+          </div>
+        </div>
         <div class="row" id="edit">
           <h5>Edit data</h5> 
           <form>
@@ -333,12 +415,15 @@
                 </div>
               </div>
             </div>
+          </form>
             <div class="row g-3 align-items-center">
               <div class="col-12">
-                <button type="button" class="btn-edit" data-bs-toggle="modal" data-bs-target="#modalEdit">Edit Data</button> 
+                <button class='btn-edit ' data-swal-template='#edit'>
+                  Edit data
+                </button>
               </div>
             </div>
-          </form>
+         
         </div>
         <div class="row" id="reset">
           <h5>Ubah Password </h5> 
@@ -365,18 +450,23 @@
               <input type="password" class="form-control" id="InputPasswordNew"class="form-control" placeholder="Konfirmasi Password Baru" >
             </div>
           </div>
+        </form>
           <div class="row g-3 align-items-center">
             <div class="col-12">
-              <button type="button" class="btn-rst">Reset Password</button>
-            </div>
+              <button class='btn-rst' data-swal-template='#reset'>
+                Reset password
+              </button>
+           </div>
           </div>
-          </form>
+          
         </div>
       </div>
       
     </div>
   </div>
 </div>
+
+<script src="/js/script.js"></script>
 
 </body>
 </html>
