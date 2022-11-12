@@ -323,7 +323,7 @@ button:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  
   background: rgba(180, 237, 222, 0.5);
   border: 2px dashed #000000;
   border-radius: 10px;
