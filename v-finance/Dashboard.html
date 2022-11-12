@@ -104,7 +104,7 @@
                     </td>
                     <td class="text-warning">Waiting for confirmation</td>
                     <td>Rp. 60.000</td>
-                    <td><button onclick="on()" class="status-btn3" type="button">detail pemesanan</button></td>
+                    <td><button class="status-btn3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Pesanan</button></td>
                   </tr>
                   <tr scope="row" class="isi-style">
                     <td>
@@ -113,7 +113,7 @@
                     </td>
                     <td class="text-warning">Waiting for confirmation</td>
                     <td>Rp. 60.000</td>
-                    <td><button onclick="on()" class="status-btn3" type="button">detail pemesanan</button></td>
+                    <td><button class="status-btn3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Pesanan</button></td>
                   </tr>
                   <tr scope="row" class="isi-style">
                     <td>
@@ -122,7 +122,7 @@
                     </td>
                     <td class="text-warning">Waiting for confirmation</td>
                     <td>Rp. 60.000</td>
-                    <td><button onclick="on()" class="status-btn3" type="button">detail pemesanan</button></td>
+                    <td><button class="status-btn3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Pesanan</button></td>
                   </tr>
                   <tr scope="row" class="isi-style">
                     <td>
@@ -131,7 +131,7 @@
                     </td>
                     <td class="text-warning">Waiting for confirmation</td>
                     <td>Rp. 60.000</td>
-                    <td><button onclick="on()" class="status-btn3" type="button">detail pemesanan</button></td>
+                    <td><button class="status-btn3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Detail Pesanan</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -140,5 +140,129 @@
         </div>
         </div>
     </div>
+
+
+    <!-- modals -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Detail Pesanan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="subtitle">
+              <h6>Opsi Pijat</h6>
+          </div>
+          <div class="d-flex justify-content-start">
+            <img src="/assets/img/pijat-parental.svg" alt="#" class="poto" />
+              <table>
+                  <tr>
+                    <td>Pijat Prenatal</td>
+                  </tr>
+                  <tr>
+                    <td>1 Jam</td>
+                  </tr>
+              </table>
+           </div>
+          
+          <ul class="nav nav-pills flex-column">
+            <h6>Alamat Pemesanan</h6>
+          <li>
+            <p>Griyonoto, Jalan janti  Gang Arjuna RT.5/RW.19, Karangjambe, Banguntapan BANGUNTAPAN, KAB.BANTUL, DI YOGYAKARTA 55798</p>
+          </li>
+
+          <div>
+            <h6>Detail Pemesanan</h6>
+            <div class="d-flex justify-content-start">
+                  <table>
+                    <tr>
+                      <td>Nomor Resi</td>
+                      <td>031204151104</td>
+                    </tr>
+                    <tr>
+                      <td>Nomor Pemesanan</td>
+                      <td>xxxxxxxxxxx</td>
+                    </tr>
+                    <tr>
+                      <td>Jenis Bank</td>
+                      <td>Bank BNI</td>
+                    </tr>
+                    <tr>
+                      <td>Bank BNI</td>
+                      <td>Rp 70.000</td>
+                    </tr>
+                    <tr>
+                      <td>Nama Pemijat</td>
+                      <td>Jubaidah</td>
+                    </tr>
+                    <tr>
+                      <td>Jenis Kelamin Pemijat</td>
+                      <td>Perempuan</td>
+                    </tr>
+                    <tr>
+                      <td>Tanggal Pemesanan</td>
+                      <td>30 Februari 2069</td>
+                    </tr>
+                    <tr>
+                      <td>Diskon</td>
+                      <td>50%</td>
+                    </tr>
+                  </table>
+            </div>
+          </div>
+            
+          <div class="modal-footer">
+            <td>
+              <button class="btn-btn-primary1" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Batal</button>
+            </td>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- modals 2 -->
+     <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Mengapa Kamu Ingin Membatalkan?</h5>
+          </div>
+          <div class="modal-body">
+              <form>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="alasan1" />
+                  <label class="form-check-label" for="">Pesanan tidak sengaja dibuat</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="alasan2" />
+                  <label class="form-check-label" for="">Pemijat tidak datang</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="alasan3" />
+                  <label class="form-check-label" for="">Keperluan mendesak</label>
+                </div>
+                <div class="form-text">
+                  <input class="form-control" rows="3" placeholder="lainnya..."></input>
+                </div>
+                <div>
+                <div class="modal-footer">
+                    <td>
+                      <button class="btn-btn-primary2" data-bs-target="#" data-bs-toggle="modal" data-bs-dismiss="modal">Kirim</button>
+                    </td>
+                </div> 
+                </div>
+              </form>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
   </body>
 </html>
