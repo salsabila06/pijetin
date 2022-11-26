@@ -95,6 +95,37 @@ span {
   animation: progress 1s ease-out forwards;
 }
 
+.subtitle h5{
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.subtitle h4{
+  font-family:'Poppins';
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.subtitle h6{
+  font-family:'Poppins';
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+}
+.subtitle p{
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.subtitle i{
+  color: #439D34;
+}
+
 @keyframes progress {
   0% {
     stroke-dasharray: 0 100;
